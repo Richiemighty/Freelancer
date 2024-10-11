@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        /* Container for the logos with responsiveness */
+.top-logos {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    height: 15vh;
+}
+
+/* Individual logo */
+.logos {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.logos-container {
+    display: flex;
+    overflow: hidden; /* To hide overflowing logos */
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Logo image styling */
+.logos img {
+    width: 60%;
+    height: 40px;
+    text-align: center;
+}
+
+/* Navigation buttons */
+.nav-button {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none; /* Hidden by default */
+    z-index: 10;
+}
+
+.nav-button.left {
+    left: 5px;
+}
+
+.nav-button.right {
+    right: 5px;
+}
+
+/* Show navigation buttons only when screen size is less than 700px */
+@media (max-width: 700px) {
+    .logos-container {
+        width: 70%; /* Adjust container size */
+    }
+    .logos {
+        flex: 0 0 33.3333%; /* 3 logos visible per view */
+    }
+
+    .nav-button {
+        display: block; /* Show navigation buttons */
+    }
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="top-logos">
+            <div class="logos text-center text-white">As used by</div>
+            <button class="nav-button left" onclick="prevLogos()">&lt;</button>
+            <div class="logos-container">
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/adobe-logo-darkmode.svg"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/facebook-corporate-logo2-darkmode.svg"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/deloitte-logo2-darkmode.svg"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/nasa-logo-v4.png?image-optimizer=force&format=webply&width=132"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/ibm-logo2-darkmode.svg"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/airbus-logo2-darkmode.svg"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/telstra-logo-darkmode-1.svg"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/fujitsu-logo-darkmode.svg"
+                        alt></div>
+                <div class="logos"><img
+                        src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/google-logo-darkmode.svg"
+                        alt></div>
+            </div>
+            <button class="nav-button right" onclick="nextLogos()">&gt;</button>
+        </div>
+    </body>
+</html>
+<script>
+    let currentIndex = 0;
+    const logosContainer = document.querySelector('.logos-container');
+    const logos = document.querySelectorAll('.logos');
+    const totalLogos = logos.length;
+    const logosPerView = 3; // Only show 3 logos per view
+
+    // Function to show next 3 logos
+    function nextLogos() {
+        if (currentIndex + logosPerView < totalLogos) {
+            currentIndex += logosPerView;
+            updateLogoDisplay();
+        }
+    }
+
+    // Function to show previous 3 logos
+    function prevLogos() {
+        if (currentIndex > 0) {
+            currentIndex -= logosPerView;
+            updateLogoDisplay();
+        }
+    }
+
+    // Update the display of logos by shifting the container
+    function updateLogoDisplay() {
+        const logoWidth = logos[0].clientWidth + 10; // Each logo width + gap
+        logosContainer.style.transition = 'transform 0.5s ease'; // Add transition for smooth sliding
+        logosContainer.style.transform = `translateX(-${currentIndex * logoWidth}px)`;
+    }
+
+    // Listen for window resize and reset if width > 700px
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 700) {
+            logosContainer.style.transition = 'none'; // Disable transition for immediate reset
+            logosContainer.style.transform = 'translateX(0)';
+            currentIndex = 0;
+        }
+    });
+
+
+</script>

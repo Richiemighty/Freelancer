@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bbacfaf443.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Freelancer</title>
+    </head>
+    <body>
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg position-fixed">
+            <div class="nav container-fluid navcontainer">
+                <div class=" free logo"><img
+                    src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg"
+                    alt>
+                </div>
+                <div class="contain d-flex align-items-center gap-3">
+                    <div class="free d-block d-lg-none"><a href="login.html">Log in <iclass="fa-solid fa-chevron-down"></i></a></div>
+                    <div class="free d-block d-lg-none"><a href="signup.html">Sign Up <iclass="fa-solid fa-chevron-down"></i></a></div>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>            
+
+                    <div class="collapse navbar-collapse top" id="">
+                        <div class="left">
+
+                            <!-- HIRE FREELANCER  -->
+
+                            <div class="free">
+                                <a href>Hire freelancers <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-content">
+
+                                        <div class="sub-content">
+                                            <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                                            <div class="letter">
+                                                <h6>By skill</h6>
+                                                <p>Looking for a freelancer with specific skill? Start here</p>
+                                            </div>
+                                            <div class="cheveron"><i class="fa-solid fa-chevron-right"></i></div>
+
+                                            <div class="sub-right">
+                                                <div class="sub-right-content">
+                                                    <div class="up-card">
+                                                        <div class="card" >
+                                                            <div class="yellow">
+                                                                <img src="images/graphic-design (1).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Graphics Designer</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow purple">
+                                                                <img src="images/website (1).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Website designers</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow blue">
+                                                                <img src="images/mobile (1).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Graphics Designer</p>
+                                                            </div>
+                                                          </div>    
+                                                    </div>
+
+                                                    <div class="up-card">
+                                                        <div class="card" >
+                                                            <div class="yellow blu">
+                                                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/hire-skills/sd.png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Graphics Designer</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow">
+                                                                <img src="images/3d (1).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Graphics Designer</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow pink">
+                                                                <img src="images/illustration (1).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Graphics Designer</p>
+                                                            </div>
+                                                          </div>    
+                                                    </div>
+                                                </div>
+                                                <div class="right-right">
+                                                    <h6>Other popular skills</h6>
+                                                    <p><a href="">Web developers</a></p>
+                                                    <p><a href="">Writers</a></p>
+                                                    <p><a href="">Marketing specilaist</a></p>
+                                                    <p><a href="">SEO specialists</a></p>
+                                                    <p><a href="">Data entry clerks</a></p>
+                                                    <p><a href="">Virtual assistants</a></p>
+                                                    <p><a href="">Translators</a></p>
+                                                    <p><a href="">Financial experts</a></p>
+                                                    <p><a href="">Manufacturers</a></p>
+                                                    <p><a href="">Logistics experts</a></p>
+                                                    <p><a href="">Fashion designers</a></p>
+                                                    <button><a href="">View more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+
+                                        <div class="sub-content first">
+                                            <div class="icon"><i class="fa-solid fa-location-dot"></i></i></div>
+                                            <div class="letter">
+                                                <h6>By Location</h6>
+                                                <p>Search for freelancers based on their location</p>
+                                            </div>
+                                            <div class="cheveron"><i class="fa-solid fa-chevron-right"></i></div>
+
+                                            <div class="sub-right">
+
+                                                <div class="first-right">
+                                                    <div class="right-right">
+                                                        <h6>Find works in different language</h6>
+                                                        <p><a href="">Software development</a></p>
+                                                        <p><a href="">Internet marketing jobs</a></p>
+                                                        <p><a href="">Data entry jobs</a></p>
+                                                        <p><a href="">SEO jobs</a></p>
+                                                        <p><a href="">Data entry clerks</a></p>
+                                                        <p><a href="">Virtual assistants</a></p>
+                                                        <p><a href="">Translators</a></p>
+                                                        <p><a href="">Financial experts</a></p>
+                                                        <p><a href="">Manufacturers</a></p>
+                                                        <p><a href="">Logistics experts</a></p>
+                                                        <p><a href="">Fashion designers</a></p>
+                                                        <button><a href="">View more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                    </div>
+                                                    <div class="right-left">
+                                                        <div class="up-card">
+                                                            <div class="card" >
+                                                                <div class="yellow blu">
+                                                                    <img src="images/location-1.jpg" class="card-img-top" alt="...">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                  <p class="card-text text-white">Working with international freelancers</p>
+
+                                                                  <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                                </div>
+                                                              </div>    
+                                                              <div class="card" >
+                                                                    <div class="yellow">
+                                                                        <img src="images/location-2.jpg" class="card-img-top" alt="...">
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <p class="card-text text-white">Where to find the best developers</p>
+                                                                        <div>                                                                        
+                                                                            <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>   
+                                                                        </div>
+                                                                    </div>
+                                                              </div>    
+                                                        </div>
+                                                        <div class="up-card">
+                                                            <div class="card" >
+                                                                <div class="yellow blu">
+                                                                    <img src="images/location-3.jpg" class="card-img-top" alt="...">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                  <p class="card-text text-white">Working with international freelancers</p>
+
+                                                                  <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                                </div>
+                                                              </div>    
+
+                                                              <div class="card" >
+                                                                    <div class="yellow">
+                                                                        <img src="images/location-4.jpg" class="card-img-top" alt="...">
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <p class="card-text text-white">Where to find the best developers</p>
+
+                                                                        <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                                    </div>
+                                                              </div>    
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="sub-content first">
+                                            <div class="icon"><i class="fa-solid fa-icons"></i></div>
+                                            <div class="letter">
+                                                <h6>By category</h6>
+                                                <p>Freelanceing tha suit certein project category </p>
+                                            </div>
+                                            <div class="cheveron"><i class="fa-solid fa-chevron-right"></i></div>
+
+                                            <div class="sub-right">
+
+                                                <div class="first-right">
+                                                    <div class="right-right">
+                                                        <h6>Find works in different language</h6>
+                                                        <p><a href="">Software development</a></p>
+                                                        <p><a href="">Internet marketing jobs</a></p>
+                                                        <p><a href="">Data entry jobs</a></p>
+                                                        <p><a href="">SEO jobs</a></p>
+                                                        <p><a href="">Data entry clerks</a></p>
+                                                        <p><a href="">Virtual assistants</a></p>
+                                                        <p><a href="">Translators</a></p>
+                                                        <p><a href="">Financial experts</a></p>
+                                                        <p><a href="">Manufacturers</a></p>
+                                                        <p><a href="">Logistics experts</a></p>
+                                                        <p><a href="">Fashion designers</a></p>
+                                                        <button><a href="">View more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                    </div>
+                                                    <div class="right-left">
+                                                        <div class="up-card">
+                                                            <div class="card" >
+                                                                <div class="yellow blu">
+                                                                    <img src="images/location-1.jpg" class="card-img-top" alt="...">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                  <p class="card-text text-white">Working with international freelancers</p>
+
+                                                                  <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                                </div>
+                                                              </div>    
+                                                              <div class="card" >
+                                                                    <div class="yellow">
+                                                                        <img src="images/location-2.jpg" class="card-img-top" alt="...">
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <p class="card-text text-white">Where to find the best developers</p>
+                                                                        <div>                                                                        
+                                                                            <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>   
+                                                                        </div>
+                                                                    </div>
+                                                              </div>    
+                                                        </div>
+                                                        <div class="up-card">
+                                                            <div class="card" >
+                                                                <div class="yellow blu">
+                                                                    <img src="images/location-3.jpg" class="card-img-top" alt="...">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                  <p class="card-text text-white">Working with international freelancers</p>
+
+                                                                  <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                                </div>
+                                                              </div>    
+
+                                                              <div class="card" >
+                                                                    <div class="yellow">
+                                                                        <img src="images/location-4.jpg" class="card-img-top" alt="...">
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <p class="card-text text-white">Where to find the best developers</p>
+
+                                                                        <button><a href="">Find out more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                                    </div>
+                                                              </div>    
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+
+                                            </div>
+                                        </div>                                        
+                                                                           
+                                    
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- FIND WORK  -->
+
+                            <div class="free find">
+                                <a href>Find work <i class="fa-solid fa-chevron-down"></i></a>
+
+                                <div class="dropdown">
+                                    <div class="dropdown-content">
+
+                                        <div class="sub-content">
+                                            <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                                            <div class="letter">
+                                                <h6>By skill</h6>
+                                                <p>Looking for a freelancer with specific skill? Start here</p>
+                                            </div>
+                                            <div class="cheveron"><i class="fa-solid fa-chevron-right"></i></div>
+
+                                            <div class="sub-right">
+                                                <div class="sub-right-content">
+                                                    <div class="up-card">
+                                                        <div class="card" >
+                                                            <div class="yellow blue">
+                                                                <img src="images/website (2).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Website jobs</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow purple">
+                                                                <img src="images/graphic-design (2).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Graphics design</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow blue">
+                                                                <img src="images/data-entry.png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Data entry jobs</p>
+                                                            </div>
+                                                          </div>    
+                                                    </div>
+
+                                                    <div class="up-card">
+                                                        <div class="card" >
+                                                            <div class="yellow blu">
+                                                                <img src="images/mobile (1).png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Mobile app deployment</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow">
+                                                                <img src="images/internet-marketing.png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Internet marketing jobs</p>
+                                                            </div>
+                                                          </div>    
+                                                          <div class="card" >
+                                                            <div class="yellow pink">
+                                                                <img src="images/local.png" class="card-img-top" alt="...">
+                                                            </div>
+                                                            <div class="card-body">
+                                                              <p class="card-text text-center text-white">Local jobs</p>
+                                                            </div>
+                                                          </div>    
+                                                    </div>
+                                                </div>
+                                                <div class="right-right">
+                                                    <h6>Other popular jobs</h6>
+                                                    <p><a href="">Software development</a></p>
+                                                    <p><a href="">Internet marketing jobs</a></p>
+                                                    <p><a href="">Data entry jobs</a></p>
+                                                    <p><a href="">SEO jobs</a></p>
+                                                    <p><a href="">Data entry clerks</a></p>
+                                                    <p><a href="">Virtual assistants</a></p>
+                                                    <p><a href="">Translators</a></p>
+                                                    <p><a href="">Financial experts</a></p>
+                                                    <p><a href="">Manufacturers</a></p>
+                                                    <p><a href="">Logistics experts</a></p>
+                                                    <p><a href="">Fashion designers</a></p>
+                                                    <button><a href="">View more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+
+                                        <div class="sub-content second">
+                                            <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                                            <div class="letter">
+                                                <h6>By Language</h6>
+                                                <p>Finf project that are in your language</p>
+                                            </div>
+                                            <div class="cheveron"><i class="fa-solid fa-chevron-right"></i></div>
+
+
+                                            <div class="sub-right second">
+                                                <div class="right-right">
+                                                    <h6>Find works in different language</h6>
+                                                    <p><a href="">Software development</a></p>
+                                                    <p><a href="">Internet marketing jobs</a></p>
+                                                    <p><a href="">Data entry jobs</a></p>
+                                                    <p><a href="">SEO jobs</a></p>
+                                                    <p><a href="">Data entry clerks</a></p>
+                                                    <p><a href="">Virtual assistants</a></p>
+                                                    <p><a href="">Translators</a></p>
+                                                    <p><a href="">Financial experts</a></p>
+                                                    <p><a href="">Manufacturers</a></p>
+                                                    <p><a href="">Logistics experts</a></p>
+                                                    <p><a href="">Fashion designers</a></p>
+                                                    <button><a href="">View more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="sub-content second">
+                                            <div class="icon"><i class="fa-regular fa-bookmark"></i></div>
+                                            <div class="letter">
+                                                <h6>By featured jobs</h6>
+                                                <p>Explore our current list of excited top featured project</p>
+                                            </div>
+                                            <div class="cheveron"><i class="fa-solid fa-chevron-right"></i></div>
+
+                                            <div class="sub-right">
+                                                <div class="right-right">
+                                                    <h6>Find works in different language</h6>
+                                                    <p><a href="">Software development</a></p>
+                                                    <p><a href="">Internet marketing jobs</a></p>
+                                                    <p><a href="">Data entry jobs</a></p>
+                                                    <p><a href="">SEO jobs</a></p>
+                                                    <p><a href="">Data entry clerks</a></p>
+                                                    <p><a href="">Virtual assistants</a></p>
+                                                    <p><a href="">Translators</a></p>
+                                                    <p><a href="">Financial experts</a></p>
+                                                    <p><a href="">Manufacturers</a></p>
+                                                    <p><a href="">Logistics experts</a></p>
+                                                    <p><a href="">Fashion designers</a></p>
+                                                    <button><a href="">View more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                </div>
+                                            </div>                                       
+                                         </div>
+
+                                        <div class="sub-content second">
+                                            <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+                                            <div class="letter">
+                                                <h6>Find contest</h6>
+                                                <p>Unleash your talent and find freelancer competition to enter</p>
+                                            </div>
+                                            <div class="cheveron"><i class="fa-solid fa-chevron-right"></i></div>
+
+                                            <div class="sub-right">
+                                                <div class="right-right">
+                                                    <h6>Find works in different language</h6>
+                                                    <p><a href="">Software development</a></p>
+                                                    <p><a href="">Internet marketing jobs</a></p>
+                                                    <p><a href="">Data entry jobs</a></p>
+                                                    <p><a href="">SEO jobs</a></p>
+                                                    <p><a href="">Data entry clerks</a></p>
+                                                    <p><a href="">Virtual assistants</a></p>
+                                                    <p><a href="">Translators</a></p>
+                                                    <p><a href="">Financial experts</a></p>
+                                                    <p><a href="">Manufacturers</a></p>
+                                                    <p><a href="">Logistics experts</a></p>
+                                                    <p><a href="">Fashion designers</a></p>
+                                                    <button><a href="">View more</a> <i class="fa-solid fa-chevron-right"></i></button>
+                                                </div>
+                                            </div>                                        
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                                <!-- SOLUTION  -->
+                            <div class="free solution">
+                                <a href>Solution <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-content">
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+
+                        </div>
+                        <div class="right">
+                            <div class="free"><a href="login.html">Log in <iclass="fa-solid fa-chevron-down"></i></a></div>
+                            <div class="free"><a href="signup.html">Sign Up <iclass="fa-solid fa-chevron-down"></i></a></div>
+                            <div><a class="btn btn-danger" href="#"role="button">Post a Project</a></div>
+                        </div>    
+                    </div>  
+
+                    <div class="togglepage collapse navbar-collapse offcanvas offcanvas-end w-100" id="navbarSupportedContent">
+                        <div class="nav container-fluid navcontainer d-lg-none">
+                            <div class="up">
+                                <div class=" free logo"><img
+                                    src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg"
+                                    alt>
+                                </div>
+                                <div class="close">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>                    
+                                </div>    
+                            </div>
+                            <div class="toggle-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsum incidunt provident unde saepe magni iusto sequi quas laborum repellendus eius, aperiam eaque ab optio maxime, ex eveniet a. Animi.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </nav>
+
+        <main>
+            <div class="content">
+                <div id="videoContainer">
+                    <video id="video1" src="nasa-v3.mp4" muted
+                        playsinline></video>
+                    <video id="video2" src="mobile-phone-v3.mp4" muted playsinline
+                        style="display:none;"></video>
+                    <video id="video3" src="ai-contest-hero.mp4" muted playsinline
+                        style="display:none;"></video>
+                </div>
+    
+                <div class="hire">
+                    <div>
+                        <h1>Hire the best freelancers for any job, online.</h1>
+                    </div>
+                    <div class="p-tags mt-4 mb-3">
+                            <div class="hov first"> 
+                                <div class="div"><i class="fa-solid fa-circle"></i></div> 
+                                <div class="p-div"> <p> World's largest freelance marketplace  </p>                              </div>
+                            </div>
+                            <div class="hov second">
+                                <div class="div"><i class="fa-solid fa-circle"></i></div> 
+                                <div class="p-div"><p>Any job you can possibly think of    </p>                                </div>
+                            </div>
+                            <div class="hov third">
+                                <div class="div"><i class="fa-solid fa-circle"></i></div> 
+                                <div class="p-div"><p>Save up to 90% & get quotes for free </p></div>
+                            </div>
+                            <div class="hov fourth"> 
+                                <div class="div"><i class="fa-solid fa-circle"></i></div> 
+                                <div class="p-div"><p>Pay only when you're 100% happy</p></div>
+                            </div>
+                    </div>
+                    <div class="below">
+                        <a class=" button btn" href="#" role="button">Hire a Freelancer</a>
+                        <a class=" button earn btn" href="#" role="button">Earn Money Freelancing</a>
+                    </div>
+
+                </div>    
+            </div>
+        </main>
+
+
+        <div class="top-logos">
+            <div class="logos text-center text-white">As used by</div>
+            <div class="logos-container">
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/adobe-logo-darkmode.svg" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/facebook-corporate-logo2-darkmode.svg" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/deloitte-logo2-darkmode.svg" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/nasa-logo-v4.png?image-optimizer=force&format=webply&width=132" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/ibm-logo2-darkmode.svg" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/airbus-logo2-darkmode.svg" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/telstra-logo-darkmode-1.svg" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/fujitsu-logo-darkmode.svg" alt=""></div>
+                <div class="logos"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/google-logo-darkmode.svg" alt=""></div>
+            </div>
+            <div class="hidden">
+                <div class="carousel-container">
+                    <div class="carousel-top">
+                        <div class="carousel-navigation-buttons">
+                            <!-- <button id="prevBtn"><img src="https://img.icons8.com/ios-filled/50/ffffff/chevron-left.png" alt="Previous"></button> -->
+                            <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                        </div>
+                        <div class="carousel-logos-container" id="logosContainer">
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/adobe-logo-darkmode.svg" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/facebook-corporate-logo2-darkmode.svg" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/deloitte-logo2-darkmode.svg" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/nasa-logo-v4.png?image-optimizer=force&format=webply&width=132" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/ibm-logo2-darkmode.svg" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/airbus-logo2-darkmode.svg" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/telstra-logo-darkmode-1.svg" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/fujitsu-logo-darkmode.svg" alt=""></div>
+                            <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/google-logo-darkmode.svg" alt=""></div>
+                        </div>
+
+                        <div class="carousel-navigation-buttons">
+                            <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                            <!-- <button id="nextBtn"><img src="https://img.icons8.com/ios-filled/50/ffffff/chevron-right.png" alt="Next"></button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        
+        </div>
+
+
+          
+        <section>
+            <div class="container-fluid">
+                
+                <div class="make-it">
+                    <div class="make-left">
+                        <div class="make text-danger"><h1>Make it real</h1></div>
+                        <div class="make text-white"> <h1>with Freelancer</h1> </div>    
+                    </div>
+                    <div class="on"><img src="https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-cards-ld.png" alt="">                </div>
+                </div>
+
+                <div class="big">
+                    <div class="inner">
+                        <h2>The best talent                        </h2>
+                        <p>Discover reliable professionals by exploring their portfolios and immersing yourself in the feedback shared on their profiles.                        </p>
+                    </div>
+                    <div class="inner">
+                        <h2>Fast bids                        </h2>
+                        <p>Get quick, no-obligation quotes from skilled freelancers. 80% of jobs receive bids within 60 seconds. Your idea is just moments from reality.                        </p>
+                    </div>
+                    <div class="inner">
+                        <h2>Quality work                        </h2>
+                        <p>With Freelancer's talent pool of over 60 million professionals at your fingertips, you'll find quality talent to get what you need done.                        </p>
+                    </div>
+                    <div class="inner">
+                        <h2>Be in control                        </h2>
+                        <p>Stay in the loop while on the move. Chat with your freelancers and get real time updates with our mobile app. Anytime, anywhere.                        </p>
+                    </div>
+                </div>
+                <div class="dream">
+                    <h2>Make your dreams a reality.                    </h2>
+                    <a href="">Get Started now <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+
+
+
+                <div class="chat">
+                    <!-- <div class="under"><img src="https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-bg-m.png" alt="">                </div> -->
+                    <div class="under"><img src="https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-cards-m.png" alt="">                </div>
+                </div>
+    
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+    </body>
+</html>
+<script>
+    const video1 = document.getElementById("video1");
+    const video2 = document.getElementById("video2");
+    const video3 = document.getElementById("video3");
+
+    // Video play sequence function
+    video1.play();
+
+    video1.addEventListener("ended", function() {
+        video1.style.display = "none";
+        video2.style.display = "block";
+        video2.play();
+    });
+
+    video2.addEventListener("ended", function() {
+        video2.style.display = "none";
+        video3.style.display = "block";
+        video3.play();
+    });
+
+    video3.addEventListener("ended", function() {
+        video3.style.display = "none";
+        video1.style.display = "block";
+        video1.play();
+    });
+</script>
+
+<script>
+    const logosContainer = document.getElementById('logosContainer');
+    const logos = logosContainer.getElementsByClassName('carousel-logo');
+    const logosPerPage = 3;
+    let currentPage = 0;
+
+    function updateDisplay() {
+        // Hide all logos
+        for (let i = 0; i < logos.length; i++) {
+            logos[i].style.display = 'none';
+        }
+
+        // Show the logos for the current page
+        for (let i = currentPage * logosPerPage; i < (currentPage + 1) * logosPerPage && i < logos.length; i++) {
+            logos[i].style.display = 'block';
+        }
+    }
+
+    // Navigation buttons functionality
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            updateDisplay();
+        }
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        if ((currentPage + 1) * logosPerPage < logos.length) {
+            currentPage++;
+            updateDisplay();
+        }
+    });
+
+    // Initial display update
+    updateDisplay();
+</script>

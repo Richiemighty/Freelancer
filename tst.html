@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Logo Carousel</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .carousel-container {
+            display: block;
+            justify-content: center;
+        }
+        .carousel-logos-container {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rebeccapurple;
+            margin: auto;
+        }
+        .carousel-logos-container .carousel-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel-logos-container .carousel-logo img {
+            width: 100px;
+            height: 40px;
+        }
+        .carousel-navigation-buttons {
+            display: flex;
+            justify-content: center;
+        }
+        .carousel-navigation-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .carousel-top {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            background-color: red;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hidden">
+        <div class="carousel-container">
+            <div class="text-center text-white">As used by</div>
+            <div class="carousel-top">
+                <div class="carousel-navigation-buttons">
+                    <button id="prevBtn"><img src="https://img.icons8.com/ios-filled/50/ffffff/chevron-left.png" alt="Previous"></button>
+                </div>
+                <div class="carousel-logos-container" id="logosContainer">
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/adobe-logo-darkmode.svg" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/facebook-corporate-logo2-darkmode.svg" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/deloitte-logo2-darkmode.svg" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/nasa-logo-v4.png?image-optimizer=force&format=webply&width=132" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/ibm-logo2-darkmode.svg" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/airbus-logo2-darkmode.svg" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/telstra-logo-darkmode-1.svg" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/fujitsu-logo-darkmode.svg" alt=""></div>
+                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/google-logo-darkmode.svg" alt=""></div>
+                </div>
+                <div class="carousel-navigation-buttons">
+                    <button id="nextBtn"><img src="https://img.icons8.com/ios-filled/50/ffffff/chevron-right.png" alt="Next"></button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script>
+        const logosContainer = document.getElementById('logosContainer');
+        const logos = logosContainer.getElementsByClassName('carousel-logo');
+        const logosPerPage = 3;
+        let currentPage = 0;
+
+        function updateDisplay() {
+            // Hide all logos
+            for (let i = 0; i < logos.length; i++) {
+                logos[i].style.display = 'none';
+            }
+
+            // Show the logos for the current page
+            for (let i = currentPage * logosPerPage; i < (currentPage + 1) * logosPerPage && i < logos.length; i++) {
+                logos[i].style.display = 'block';
+            }
+        }
+
+        // Navigation buttons functionality
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                updateDisplay();
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if ((currentPage + 1) * logosPerPage < logos.length) {
+                currentPage++;
+                updateDisplay();
+            }
+        });
+
+        // Initial display update
+        updateDisplay();
+    </script>
+</body>
+</html>
