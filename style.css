@@ -25,7 +25,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 40px;
+    gap: 15px;
     padding-left: 30px;
 }
 .free a{
@@ -34,10 +34,12 @@ nav{
     word-spacing: 1px;
     font-size: 14px;
 }
-.free a:hover{
+.free .btn:hover{
     color: blue;
 }
-
+.free .btn:focus {
+    color: blue;
+}
 .right{
     display: flex;
     gap: 30px;
@@ -229,6 +231,7 @@ nav{
 }
 .right-right p a:hover{
     text-decoration: underline 2px;
+    color: blue;
 }
 .right-right button{
     padding: 10px;
@@ -247,6 +250,7 @@ nav{
 }
 .right-right button:hover a{
     text-decoration: underline 2px;
+    color: blue;
 }
 .right-right button:hover i{
     padding-left: 5px;
@@ -359,14 +363,152 @@ nav{
 }
 
 
+
+
+/* SOLUTION  */
 .solution .dropdown{
     width: 80%;
-    background-color: black;
+    /* background-color: black; */
+    padding: 20px 0;
+    height: 90vh;
     left: 10%;
 }
 .solution .dropdown-content{
     width: 100%;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    /* background-color: transparent; */
+
 }
+.col1{
+    width: 60%;
+    height: 100%;
+    /* background-color: red; */
+}
+.col2{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(58,58,70);
+}
+.col1-top{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 10px;
+}
+.six-divs{
+    width: 48%;
+    /* height: 25%; */
+    gap: 10px;
+    background-color: rgb(58,58,70);
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+.six-divs a{
+    font-size: 0.8em;
+}
+.six-divs i{
+    color: blue;
+    padding-right: 3px;
+}
+.six-divs:hover{
+    background-color: rgb(35,42,53);
+}
+
+
+.col1-down{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.down-left, .down-right{
+    width: 48%;
+}
+
+.down-left .heading{
+    border-bottom: 2px solid blue;
+    width: 98%;
+    display: flex;
+}
+.heading i{
+    padding: 0 8px;
+}
+.as{
+    padding: 10px 0;
+}
+
+.as p, .as a{
+    line-height: 0.9;
+    font-size: 12px;
+}
+.as p:hover a{ 
+    color: blue;
+    text-decoration: underline;
+}
+
+.col2{
+    padding-top: 40px;
+}
+
+.col2 .up-card{
+    width: 100%;
+    height: 40%;
+}
+.col2 .card{
+    width: 48%;
+}
+.col2 .card button{
+    border: none;
+    background-color: transparent;
+    font-size: 13px;
+}
+.col2 .card-body{
+    display: block;
+    font-size: 12px;
+}
+.col2 .card:hover button a{
+    color: blue;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.col2 button i, .col2 button a{
+    color: blue;
+}
+.col2 .card:hover button i{
+    padding-left: 5px;    
+}
+.as button{
+    border: none;
+    width: fit-content;
+    background-color: transparent;
+    color: blue;
+}
+.as button a{
+    font-size: 15px;
+    color: blue;
+    font-weight: 600;
+}
+
+
+.as button:hover  i{
+    padding-left: 3px;    
+}
+.as button:hover  a{
+    text-decoration: underline;
+}
+
 
 
 
