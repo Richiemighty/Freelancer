@@ -74,12 +74,15 @@ main{
     border-radius: 5px;
     display: flex;
     gap: 15%;
+    background-color: rgb(252,252,253);
     margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.214);
     color: rgb(60,64,67);
     font-size: 15px;
 }
-
+.btn button:hover{
+    background-color: rgba(173, 216, 230, 0.204);
+}
 
 .btn button img{
     width: 25px;
@@ -380,11 +383,24 @@ input.form-control{
     .details{
         width: 405px;
     }
+    .content{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
 }
 
 @media (max-width: 450px) {
+    .content{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .details{
         width: 100%;
+        padding-left: 0px;
+        padding-left: 0px;
     }
 
 }
