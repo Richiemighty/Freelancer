@@ -520,7 +520,7 @@ nav{
     /* width: 100vw; */
     height: 100vh;
     display: block;
-    background-color: black;
+    background-color: rgb(18,21,27);
     z-index: 100;
     position: absolute;
     top: 0;
@@ -552,10 +552,186 @@ nav{
 }
 .toggle-content{
     z-index: 10;
+    position: relative;
 }
 .toggle-content p{
     color: white;
 }
+.toggle-content .foot-right{
+    display: block;
+    width: 100vw;
+    /* background-color: red; */
+    padding: 0 10px;
+}
+.toggle-content #footers{
+    width: 97%;
+    padding: 20px 10px;
+    border-bottom:  1px solid white;
+}
+
+
+.toggle-content button{
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.toggle-content button:hover{
+    background-color: rgb(35,42,53);
+}
+.tit i{
+    padding-right: 10px;
+    color: blue;
+}
+
+
+
+#right{
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: scroll;
+    
+}
+#right .sub-right{
+    width: 100%;
+    height: 100%;
+}
+#right .sub-right-content{
+    width: 100%;
+    height: 55%;
+}
+
+.toggle-content button:focus .sub-right{
+    display: block;
+}
+
+
+#right .right-right{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+#right .btnn{
+    z-index: 100;
+    /* background-color: green; */
+    position: absolute;
+    top: 0;
+    right: 50px;
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: blue;
+}
+#right .btnn a{
+    color: blue;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+.toggle-content #right2{ 
+    /* display: block; */
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 50px;
+    overflow: scroll;
+    padding: 0 20px;
+}
+
+.toggle-content #second-btn #right2{
+    display: block;
+}
+
+
+.toggle-content button:focus #right2.sub-right{
+    display: block;
+    z-index: 100;
+}
+
+#right2 .sub-right{
+    width: 100%;
+    /* height: 100vh; */
+}
+#first-right{
+    width: 100%;
+    /* height: 40%; */
+}
+#right-right .right-right{
+    width: 100%;
+    color: white;
+}
+#right-right .right-right a{
+    text-decoration: none;
+    color: white;
+}
+#right-right .right-right a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+#right2 .right-left {
+    height: 80vh;
+    display: block;
+}
+#right2 .up-card{
+    height: 70%;
+    width: 100%;
+}
+#right2 .card{
+    width: 48%;
+    height: 90%;
+}
+#right2 .up-card .yellow{
+    width: 100%;
+    height: 80%;
+}
+
+
+#right2 a.btn-type{
+    transition: all 1s linear;
+}
+#right2 a.btn-type:hover i{
+    color: blue;
+    padding-left: 5px;
+}
+
+#right2 .card-body{
+    /* padding-top: 40px; */
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+#right2 .card .card-body .card-text{
+    /* width: fit-content; */
+    text-align: start;
+}   
+
+
+
+
+
+
+
+
+
 
 
 /* MAIN  */
@@ -703,10 +879,6 @@ main{
 
 
 
-
-
-
-
 .carousel-container {
     display: flex;
     justify-content: center;
@@ -763,10 +935,11 @@ section{
     /* background-image: url(https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-bg-ld.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding-top: 100px;
     padding: 80px 30px;
+    padding-bottom: 0;
 
 }
 
@@ -876,6 +1049,751 @@ section .container-fluid .on img{
 
 
 
+/* IWATCH  */
+.iwatch{
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    /* background-color: red; */
+    z-index: -1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 100px;
+}
+.watch, .left-boxes{
+    width: 50%;
+    height: 70%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* background-color: green; */
+}
+.watch img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+.watch .img{
+    height: 100%;
+}
+.watch .img:hover{
+    transform: scale(1.1);
+}
+.watch .img:hover img{
+    border-radius: 10px 10px 0 0;
+}
+.watch .img:hover .img-bt{
+    display: block;
+    display: flex;
+}
+
+.img-bt{
+    width: 100%;
+    padding: 17px;
+    background-color: white;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s linear;
+    /* visibility: hidden; */
+
+    
+}
+
+.watch .btn{
+    background-color: rgb(232,69,120);
+    font-size: 13px;
+    color: white;
+    width: 30%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: all 1s linear;
+}
+.watch .btn span{
+    font-size: 20px;
+    display: none;
+}
+.watch .btn:hover span{
+    display: block;
+    gap: 5px;
+}
+.watch .btn:hover i{
+    display: none;
+}
+
+
+
+
+
+
+
+.left-boxes .img{
+    min-width: 48%;
+}
+.left-boxes .img img{
+    width: 100%;
+    height: 100%;
+}
+.left-b{
+    height: 50%;
+    display: flex;
+    gap: 5px;
+    /* margin: 8px 0; */
+}
+
+.left-boxes img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.left-boxes  .img:hover{
+    transform: scale(1.1);
+}
+.left-boxes  .img:hover img{
+    border-radius: 10px 10px 0 0;
+}
+.left-boxes  .img:hover .img-bt{
+    display: block;
+    /* display: flex; */
+}
+
+.left-boxes .img-bt{
+    width: 100%;
+    padding:  3px 17px;
+    background-color: white;
+    font-size: 11px;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s linear;
+    /* visibility: hidden; */
+}
+
+.left-boxes  .btn{
+    background-color: rgb(232,69,120);
+    font-size: 12px;
+    color: white;
+    width: 50%;
+    height: 30px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: flex ;
+    align-items: center;
+    transition: all 1s linear;
+    margin-top: 10px;
+}
+.left-boxes .btn span{
+    font-size: 20px;
+    display: none;
+}
+.left-boxes .btn:hover span{
+    display: block;
+    gap: 5px;
+}
+.left-boxes  .btn:hover i{
+    display: none;
+}
+
+
+/* TAP  */
+
+.tap{
+    background-image: url("https://www.f-cdn.com/assets/main/en/assets/home/global-talent/global-talent-bg-ld.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    width: 100%;
+    margin-top: 150px;
+}
+
+
+.tap .on{
+    width: 100%;
+    height: 70%;
+}
+.mid-tap{
+    width: 100%;
+    display: flex;
+}
+.mid-tap .big{
+    width: 53%;
+}
+.mid-tap .big p{
+    font-size: 14px;
+}
+.mid-tap .on{
+    width: 47%;
+    padding: 20px;
+}
+.mid-tap .on img{
+    width: 85%;
+}
+
+.met{
+    background-image: url("https://www.f-cdn.com/assets/main/en/assets/home/global-talent/global-talent-bg-m.png");
+    background-size: contain;
+    /* background-position: right ; */
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    margin: auto;
+    position: relative;
+    display: none;
+}
+
+.met .under img{ 
+    width: 70%;
+    height: 30%;
+    top: 30%;
+    left: 15%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+.top-logos{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    height: 15vh;
+    padding-top: 20px;
+    /* margin-bottom: 100px; */
+}
+.logos{
+    width: 10%;
+    /* height: 150px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.logos-container{
+    display: flex;
+    width:  90%;
+    /* background-color: red; */
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos-container .logos{
+    display: flex;
+    justify-content: center;
+}
+.logos img{
+    width: 60%;
+    height: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.top-logos {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    height: 15vh;
+    padding-top: 20px;
+}
+
+.logos {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.logos-container {
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img {
+    width: 50%; /* Reduced the width slightly from 60% */
+    height: 35px; /* Reduced the height slightly from 40px */
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure elements don't overflow */
+    position: relative; /* Relative positioning for buttons */
+}
+
+.carousel-logos-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.carousel-logos-container .carousel-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-logos-container .carousel-logo img {
+    width: 65%; /* Reduced the width slightly from 80% */
+    /* height: 20px;  */
+    /* Reduced the height slightly from 40px */
+}
+
+.carousel-navigation-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-navigation-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.216);
+    color: white;
+    cursor: pointer;
+}
+
+.carousel-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.second-section{
+    margin-top: 0;
+    padding-top: 0;
+    /* height: 100%; */
+    /* background-color: green; */
+}
+
+
+
+#logosContainer1 .carousel-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+#second-watch{
+    margin-top: 0;
+    padding-top: 0;
+    height: 60vh;
+    /* background-color: green; */
+    align-items: start;
+    /* padding-bottom: 100px; */
+    margin-bottom: 0;
+}
+
+#second-watch{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.work-done{
+    /* background-color: red; */
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    /* margin-top: 60vh; */
+}
+.work-done h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.get{
+    width: 30%;
+    /* height: 200px; */
+    /* background-color: green; */
+}
+.a-c{
+    width: 70% ;
+    /* background-color: yellow; */
+    display: flex;
+    /* height: 200px; */
+    gap: 5px;
+    /* padding: 0 5px; */
+}
+
+
+.a-tags{
+    width: 25%;
+    /* background-color: purple; */
+    /* height: 500px; */
+    padding: 0 5px;
+}
+.a-tags a{
+    color: #F7F7F8;
+    text-decoration: none;
+    font-size: 14px;
+}
+.a-tags a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.a-tags p{
+    line-height: 2;
+}
+
+
+#third-watch{
+    display: none;
+}
+
+
+.a-c-hidden{
+    justify-content: space-around;
+    /* display: none; */
+    
+}
+#No-display .a-tags{
+    display: none;
+}
+.a-c-hidden .a-tags p{
+    line-height: 1;
+}
+.a-tags .btn{
+    color: rgb(231,69,120);
+    font-weight: 700;
+    padding-left: 0;
+    font-size: 17px;
+}
+.a-tags .btn:hover{
+    color: rgb(231,69,120);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#transform{
+    width: 100%;
+    background-color: black;
+    background-image: none;
+    /* height: 100vh; */
+}
+.third-section .transform{
+    width: 100%;
+    /* height: 20vh; */
+}
+#transform .make-left{
+    width:  85%;
+}
+#transform .make-left p{
+    font-size: 18px;
+}
+
+.purchase{
+    /* background-image: url("https://www.f-cdn.com/assets/main/en/assets/back-to-work/hero-v2.jpg"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    width: 98%;
+    height: 30vh;
+    /* background-position: right; */
+    border-radius: 20px;
+    padding: 24px;
+    position: relative;
+    border: 1px solid white;
+}
+.background{
+    height: 100%;
+}
+.background img{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    width: 60%;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+}
+.get-started{
+    z-index: 100;
+    /* background-color: red; */
+    position: absolute;
+    top: 24px;
+    width: 40%;
+}
+.purchase a{
+    display: flex;
+    padding: 5px 10px; 
+    width: fit-content;
+    color: white;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(232,69,120);
+    /* position: absolute; */
+    /* bottom: 0; */
+    margin-top: 20px;
+}
+.pur{
+    padding: 10px;
+}
+.purchase a:hover{
+    background-color: rgba(232, 69, 121, 0.804);
+}
+
+.ai-content{
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(23,32,47);
+}
+
+.AI{
+    height: 90vh;
+    width: 30%;
+    border: none;
+    padding: 0;
+    padding-right: 20px; 
+    display: flex;
+
+}
+
+
+.AI-head{
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /* background-color: green; */
+}
+
+.third-section{
+    padding-top: 0;
+    height: max-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.h4{
+    padding-left: 10px;
+}
+.head-icon i{
+    font-size: 20px;
+}
+.div-img img{
+    width: 100%;
+    /* height: 80%; */
+    margin: auto;
+}
+/* .div-img img{
+    width: 100%;
+    height: 100%;
+
+} */
+.AI a{
+    display: flex;
+    padding: 5px 10px; 
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(232,69,120);
+    /* position: absolute; */
+    /* bottom: 0; */
+    margin-top: 20px;
+}
+.AI .pur{
+    padding: 10px;
+}
+.ai-content{
+    background-image: url("https://www.f-cdn.com/assets/main/en/assets/back-to-work/ai-services/support-agent.png?image-optimizer=force&format=webply&width=1920");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.bt-con{
+    position: absolute;
+    bottom: 24px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.third-section .iwatch{
+    padding: 0;
+    margin: 0;
+    /* height: 00vh; */
+    margin: auto;
+}
+
+
+
+
+
+
+.conta{
+    background-image: url("https://www.f-cdn.com/assets/main/en/assets/home/api-enterprise/enterprise-upsell-v5-desktop-test.jpg");
+    height: 90vh;
+    background-size: cover;
+
+    width: 100%;
+    background-position: center;
+    padding-top: 70px;
+
+}
+.left-conta{
+    width: 60%;
+}
+.head h1{
+    font-size: 55px;
+    color: white;
+    font-weight: 800;
+}
+.conta .big{
+    width: 60%;
+    display: block;
+    margin-top: 50px;
+}
+.conta .inner{
+    width: 100%;
+    margin-top: 50px;
+}
+.conta .inner a{
+    color: rgb(232,69,120);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.conta .inner a:hover{
+    color: rgb(232,69,120);
+    text-decoration: underline;
+}
+
+
+footer{
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: rgb(18,21,27);
+
+}
+#foot{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    background-color: rgb(18,21,27);
+    height: fit-content;
+}
+#footers img{
+    width: 80%;
+    padding-bottom: 20px;
+}
+#footers{
+    width: 20%;
+    /* background-color: red; */
+    padding: 50px 10px;
+    /* line-height: 1; */
+}
+
+#footers h5{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#footers p{
+    line-height: 1;
+}
+.globe i{
+    font-size: 26px;
+}
+
+.google-apps{
+    display: flex;
+    /* width: 80%; */
+    /* justify-content: space-around; */
+}
+.google-apps a{
+    width: 90%;
+}
+.google-apps a i{
+    font-size: 25px;
+    
+}
+
+.last{
+    /* height: 300px; */
+    width: 100%;
+    background-color: rgb(18,21,27);
+    border-top: 1px solid rgba(255, 255, 255, 0.332);
+    display: flex;
+    padding: 30px 10px;
+    color: white;
+}
+.three-divs{
+    width: 50%;
+}
+.three-div{
+    width: 50%;
+    display: flex;
+    line-height: 0.5;
+    font-size: 12px;
+
+}
+.no-block{
+    display: block;
+    font-size: 10px;
+    line-height: 0.5;
+}
+.foot-right{
+    display: flex;
+    width: 80%;
+}
+
+
 
 
 
@@ -923,6 +1841,14 @@ section .container-fluid .on img{
     .inner{
         width: 48%;
     }
+    .ai-content{
+        height: 90%;
+    }
+    footer{
+        padding-left: 0;
+        padding-right: 0;
+        background-color: rgb(18,21,27);
+    }
 
 }
 @media (max-width: 999px) {
@@ -955,6 +1881,53 @@ section .container-fluid .on img{
         display: none;
     }
 }
+@media (max-width: 960px) {
+    .third-section #transform {
+        height: 320vh;
+    }
+    .AI{
+        display: block;
+        /* height: 100vh; */
+        margin: auto;
+    }
+    .AI .div-img{
+    text-align: center;
+    margin: auto;
+    }
+    .AI .div-img img{
+        height: 40%;
+        width: 60%;
+        margin: auto;
+    }
+    .ai-content{
+        margin: auto;
+        margin-top: 10px;
+    }
+    #foot{
+        display: block;
+    }
+    .foot-right{
+        width: 100%;
+    }
+}
+@media (max-width: 935px) {
+    .iwatch{
+        width: 100%;
+        padding: 0;
+    }
+    .tap {
+        margin-top: 5px;
+    }
+    .tap .on{
+        display: none;
+    }
+    .mid-tap{
+        width: 100%;
+    }
+    .mid-tap .big{
+        width: 100%;
+    }
+}
 @media (max-width: 900px) {
     main{
         height: 100%;
@@ -966,7 +1939,7 @@ section .container-fluid .on img{
     }
     .hire{
         /* background-color: green; */
-        top: 0;
+        top: 70px;
         width: 500px;
         height: 100%;
         padding-bottom: 0;
@@ -986,6 +1959,70 @@ section .container-fluid .on img{
     .chat{
         display: none;
     }
+}
+@media (max-width: 900px) {
+    .iwatch{
+        display: block;
+    }
+    .watch{
+        width: 100%;
+    }
+    .left-boxes{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        gap: 5px;
+    }
+    .left-b{
+        width: 50%;
+    }
+    .left-boxes  .img:hover{
+        transform: scale(1)
+    }
+    .left-boxes  .img:hover img{
+        border-radius: 10px ;
+        cursor: pointer;
+    }
+    .left-boxes  .img:hover .img-bt{
+        display: none;
+        /* display: flex; */
+    }
+    .watch  .img:hover{
+        transform: scale(1)
+    }
+    .watch  .img:hover img{
+        border-radius: 10px ;
+        cursor: pointer;
+    }
+    .watch  .img:hover .img-bt{
+        display: none;
+        /* display: flex; */
+    }
+    #second-watch{
+        display: none;
+    }
+    #third-watch{
+        display: block;
+    }
+    .work-done{
+        display: block;
+        width: 100%;
+    }
+    .get{
+        width: 100%;
+        margin: auto;
+    }
+    .a-c{
+        width: 100%;
+        margin: auto;
+    }
+    .get-started{
+        width: 80%;
+    }
+    .third-section{
+        margin-top: 150px;
+    }
+
 }
 @media (max-width: 760px) {
     .hire{
@@ -1008,6 +2045,18 @@ section .container-fluid .on img{
     }
     .chat{
         display: block;
+        /* width: 100%; */
+    }
+    .met{
+        padding-bottom: 20px;
+        height: 400px;
+        width: 350px;
+        margin: auto;
+        /* margin-right: 20px; */
+    }
+    .met .under{
+        height: 500px;
+        /* width: 2; */
     }
     .hire h1{
         font-size: 41px;
@@ -1041,6 +2090,65 @@ section .container-fluid .on img{
     .make-left{
         width: 100%;
     }
+    .iwatch{
+        margin-top: 300px;
+    }
+    #second-top-logo{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .a-tags{
+        display: none;
+    }
+    #foot .a-tags{
+        display: block;
+    }
+    #No-display .a-tags{
+        display: block;
+    }
+    section{
+        padding: 0 20px;
+    }
+    .second-section .iwatch{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #foot{
+        display: block;
+    }
+    #footers{
+        width: 100%;
+    }
+    #footers img{
+        width: 120px;
+    }
+    .fir-left, .img-fre{
+        width: 100%;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.378);
+    }
+    .foot-right{
+        display: block;
+    }
+    #footers{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.378);
+        padding-left: 20px;
+    }
+    .google{
+        display: flex;
+        gap: 20%;
+    }
+    .three-div{
+        display: none;
+    }
+    .no-block{
+        display: block;
+        width: 100%;
+    }
+    .last p{
+        line-height: 1;
+    }
+    
 
 
     
@@ -1068,8 +2176,11 @@ section .container-fluid .on img{
     section{
         padding-top: 0;
     }
-}
+    #foot{
+        display: block;
+    }
 
+}
 @media (max-width: 680px) {
     .chat{
         height: 40%;
@@ -1089,6 +2200,23 @@ section .container-fluid .on img{
         height: 20px;
         /* gap: 1px; */
     }
+    .conta .big{
+        width: 100%;
+    }
+    .conta .big .inner{
+        width: 100%;
+    }
+    .left-conta{
+        width: 100%;
+    }
+    .left-conta h1{
+        width: 100%;
+        font-size: 40px;
+    }
+    .third-section #transform {
+        height: 340vh;
+    }
+
 }
 @media (max-width: 405px) {
     .hire{
@@ -1121,7 +2249,49 @@ section .container-fluid .on img{
         margin-top: 15px;
         width: 100%;
     }
+    .met{
+        height: 50vh;
+    }
+    .conta{
+        background-image: none;
+    }
+
 
 }
 
+@media (max-width: 440px) {
+    #met{
+        width: 300px;
+        background-size: contain;
+        /* display: none; */
+        padding: 0;
+        height: 400px;
+    }
+    #met .under {
+        width: 100%;
+        height: fit-content;
+    }
+    #met .under img{
+        right: 0;
+        width: 200px;
+    }
+    section .iwatch{
+        height: 60vh;
+    }
+}
 
+
+@media (max-width: 390px) {
+    .third-section #transform {
+        height: 350vh;
+    }
+
+    
+}
+@media (max-width: 350px) {
+    .third-section #transform {
+        height: 360vh;
+    }
+
+    
+}

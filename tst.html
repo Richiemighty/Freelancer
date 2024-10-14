@@ -3,111 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Logo Carousel</title>
+    <title>Password Input Styling</title>
     <style>
-        body {
-            background-color: black;
+        /* Default input style */
+        .form-control {
+            transition: border-color 0.3s ease; /* Smooth transition for border color */
         }
-        .carousel-container {
-            display: block;
-            justify-content: center;
+
+        /* Remove border, shadow, and outline when input is focused */
+        .form-control:focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
         }
-        .carousel-logos-container {
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            background-color: rebeccapurple;
-            margin: auto;
+
+        /* Shake animation */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
         }
-        .carousel-logos-container .carousel-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .carousel-logos-container .carousel-logo img {
-            width: 100px;
-            height: 40px;
-        }
-        .carousel-navigation-buttons {
-            display: flex;
-            justify-content: center;
-        }
-        .carousel-navigation-buttons button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .carousel-top {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            background-color: red;
-            align-items: center;
+
+        /* Add shake class with the animation */
+        .shake {
+            animation: shake 0.5s ease;
         }
     </style>
 </head>
 <body>
-    <div class="hidden">
-        <div class="carousel-container">
-            <div class="text-center text-white">As used by</div>
-            <div class="carousel-top">
-                <div class="carousel-navigation-buttons">
-                    <button id="prevBtn"><img src="https://img.icons8.com/ios-filled/50/ffffff/chevron-left.png" alt="Previous"></button>
-                </div>
-                <div class="carousel-logos-container" id="logosContainer">
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/adobe-logo-darkmode.svg" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/facebook-corporate-logo2-darkmode.svg" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/deloitte-logo2-darkmode.svg" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/nasa-logo-v4.png?image-optimizer=force&format=webply&width=132" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/ibm-logo2-darkmode.svg" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/airbus-logo2-darkmode.svg" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/telstra-logo-darkmode-1.svg" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/fujitsu-logo-darkmode.svg" alt=""></div>
-                    <div class="carousel-logo"><img src="https://www.f-cdn.com/assets/main/en/assets/home/redesign/companies/google-logo-darkmode.svg" alt=""></div>
-                </div>
-                <div class="carousel-navigation-buttons">
-                    <button id="nextBtn"><img src="https://img.icons8.com/ios-filled/50/ffffff/chevron-right.png" alt="Next"></button>
-                </div>
-            </div>
-        </div>
-    </div>    
+
+    <!-- Password Input with Eye Icon Inside the Field -->
+    <div class="mb-4 input-group hover-focus-effect" id="password-container">
+        <input type="password" id="password" class="p-2 form-control" placeholder="Password" required>
+        <span class="input-group-text" id="togglePassword" style="cursor: pointer;">
+            <i class="fa fa-eye" id="eyeIcon"></i>
+        </span>
+    </div>
 
     <script>
-        const logosContainer = document.getElementById('logosContainer');
-        const logos = logosContainer.getElementsByClassName('carousel-logo');
-        const logosPerPage = 3;
-        let currentPage = 0;
+        // Select the password input field and container
+        const passwordInput = document.querySelector('#password');
+        const passwordContainer = document.querySelector('#password-container');
 
-        function updateDisplay() {
-            // Hide all logos
-            for (let i = 0; i < logos.length; i++) {
-                logos[i].style.display = 'none';
-            }
+        // Add event listener for when the user clicks out (blur event)
+        passwordInput.addEventListener('blur', function() {
+            // Change border color to light green on blur
+            passwordInput.style.border = "2px solid lightgreen";
 
-            // Show the logos for the current page
-            for (let i = currentPage * logosPerPage; i < (currentPage + 1) * logosPerPage && i < logos.length; i++) {
-                logos[i].style.display = 'block';
-            }
-        }
-
-        // Navigation buttons functionality
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            if (currentPage > 0) {
-                currentPage--;
-                updateDisplay();
-            }
+            // Add the shake class to trigger animation
+            passwordContainer.classList.add('shake');
+            
+            // Remove the shake class after the animation (500ms)
+            setTimeout(function() {
+                passwordContainer.classList.remove('shake');
+            }, 500);
         });
+        
+        // Optional: Add functionality to toggle password visibility
+        const togglePassword = document.querySelector('#togglePassword');
+        togglePassword.addEventListener('click', function() {
+            // Toggle the type attribute
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
 
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            if ((currentPage + 1) * logosPerPage < logos.length) {
-                currentPage++;
-                updateDisplay();
-            }
+            // Toggle the eye icon
+            const icon = document.querySelector('#eyeIcon');
+            icon.classList.toggle('fa-eye');
+            icon.classList.toggle('fa-eye-slash');
         });
-
-        // Initial display update
-        updateDisplay();
     </script>
+
 </body>
 </html>
