@@ -265,8 +265,8 @@ nav{
 }
 
 .first .sub-right{
-    width: 55%;
-    right: 15%;
+    width: 60%;
+    right: 10%;
 }
 
 
@@ -304,8 +304,10 @@ nav{
 .right-left .card-body{
     display: flex;
     width: 100%;
+    /* padding: 0; */
     flex-direction: column;
     justify-content: start;
+    position: relative;
     height: 25%;
     text-align: start;
 }
@@ -318,9 +320,14 @@ nav{
 .right-left button{
     /* padding: 10px; */
     width: fit-content;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     border: none;
+    /* float: left; */
     /* justify-self: start; */
     margin: 0;
+
     background-color: transparent;
 }
 .right-left button:hover a{

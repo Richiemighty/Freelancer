@@ -3,77 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Input Styling</title>
-    <style>
-        /* Default input style */
-        .form-control {
-            transition: border-color 0.3s ease; /* Smooth transition for border color */
-        }
-
-        /* Remove border, shadow, and outline when input is focused */
-        .form-control:focus {
-            border: none;
-            box-shadow: none;
-            outline: none;
-        }
-
-        /* Shake animation */
-        @keyframes shake {
-            0% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            50% { transform: translateX(5px); }
-            75% { transform: translateX(-5px); }
-            100% { transform: translateX(0); }
-        }
-
-        /* Add shake class with the animation */
-        .shake {
-            animation: shake 0.5s ease;
-        }
-    </style>
+    <title>Dropdown Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
+    <div class="nav-left d-flex">
+        <div class="browse position-relative">
+            Browse
+            <div class="dropdown-content">
+                <div class="dropdown-triangle"></div>
+                <ul>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Freelancers</a></li>
+                    <li><a href="#">Contests</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <!-- Password Input with Eye Icon Inside the Field -->
-    <div class="mb-4 input-group hover-focus-effect" id="password-container">
-        <input type="password" id="password" class="p-2 form-control" placeholder="Password" required>
-        <span class="input-group-text" id="togglePassword" style="cursor: pointer;">
-            <i class="fa fa-eye" id="eyeIcon"></i>
-        </span>
+        <div class="browse position-relative">
+            Manage
+            <div class="dropdown-content">
+                <div class="dropdown-triangle"></div>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Invoices</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="browse position-relative">
+            Group
+            <div class="dropdown-content">
+                <div class="dropdown-triangle"></div>
+                <ul>
+                    <li><a href="#">Create Group</a></li>
+                    <li><a href="#">Manage Group</a></li>
+                    <li><a href="#">Group Settings</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <script>
-        // Select the password input field and container
-        const passwordInput = document.querySelector('#password');
-        const passwordContainer = document.querySelector('#password-container');
-
-        // Add event listener for when the user clicks out (blur event)
-        passwordInput.addEventListener('blur', function() {
-            // Change border color to light green on blur
-            passwordInput.style.border = "2px solid lightgreen";
-
-            // Add the shake class to trigger animation
-            passwordContainer.classList.add('shake');
-            
-            // Remove the shake class after the animation (500ms)
-            setTimeout(function() {
-                passwordContainer.classList.remove('shake');
-            }, 500);
-        });
-        
-        // Optional: Add functionality to toggle password visibility
-        const togglePassword = document.querySelector('#togglePassword');
-        togglePassword.addEventListener('click', function() {
-            // Toggle the type attribute
-            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordInput.setAttribute('type', type);
-
-            // Toggle the eye icon
-            const icon = document.querySelector('#eyeIcon');
-            icon.classList.toggle('fa-eye');
-            icon.classList.toggle('fa-eye-slash');
-        });
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

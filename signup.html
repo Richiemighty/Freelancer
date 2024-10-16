@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="images/freelancer.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bbacfaf443.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -46,14 +48,12 @@
 
 
 
-                    <!-- Centered Login Form -->
+                    <!-- Centered Sign up Form -->
                     <form action="" class="login-form d-flex flex-column align-items-center">
                         <div class="profile mb-3">
-                            <input type="text" class=" form-control hover-focus-effect" placeholder="First Name" required>
-                            <input type="text" class="form-control hover-focus-effect" placeholder="Last Last" required>
-
+                            <input type="text" class="form-control hover-focus-effect" placeholder="First Name" required>
+                            <input type="text" class="form-control hover-focus-effect" placeholder="Last Name" required>
                         </div>
-
 
                         <div class="mb-4 w-100">
                             <input type="email" class="form-control hover-focus-effect" placeholder="Email or Username" required>
@@ -61,19 +61,18 @@
 
                         <!-- Password Input with Eye Icon Inside the Field -->
                         <div class="mb-4 input-group hover-focus-effect" id="password-container">
-                            <input type="password" id="password" class=" form-control" placeholder="Password" required>
+                            <input type="password" id="password" class="form-control" placeholder="Password" required>
                             <span class="input-group-text" id="togglePassword" style="cursor: pointer;">
                                 <i class="fa fa-eye" id="eyeIcon"></i>
                             </span>
                         </div>
-
+                        
                         <!-- Row with Remember Me Checkbox and Forgot Password Link -->
                         <div class="d-flex justify-content-between align-items-center mb-3" id="rme">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="rememberMe">
                                 <label class="form-check-label two" for="rememberMe"> I agree to the Freelancer <a href="">User Agreement</a> and <a href="">Privacy Policy</a></label>
                             </div>
-                            <!-- <a href="#" class="text-decoration-none">Forgot Password?</a> -->
                         </div>
 
                         <!-- Log In Button -->
@@ -110,64 +109,58 @@
 </html>
 
 
-
-
 <script>
-    const togglePassword = document.getElementById("togglePassword");
-    const passwordField = document.getElementById("password");
-    const eyeIcon = document.getElementById("eyeIcon");
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+    const eyeIcon = document.querySelector("#eyeIcon");
 
     togglePassword.addEventListener("click", function () {
         // Toggle the type attribute
-        const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
-        passwordField.setAttribute("type", type);
-
-        // Toggle the eye icon
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        
+        // Toggle the eye slash icon
         eyeIcon.classList.toggle("fa-eye-slash");
     });
-</script>
 
 
-<script>
-    // Select the input field
-    const inputField = document.querySelector('input.form-control');
 
-    // Add event listener for when the user clicks out (blur event)
-    inputField.addEventListener('blur', function() {
-        // Change border color to light green on blur
-        inputField.style.border = "1px solid rgb(16, 213, 16)";
-        
-        // Add the shake class to trigger animation
-        inputField.classList.add('shake');
-        
-        // Remove the shake class after animation (assuming 500ms duration)
-        setTimeout(function() {
-            inputField.classList.remove('shake');
-        }, 500);
+
+
+
+    document.querySelectorAll('.form-control').forEach(input => {
+        input.addEventListener('blur', function() {
+            if (!input.value.trim()) { // Check if the input is empty
+                input.classList.add('invalid-input'); // Add the invalid class for styling
+                // Remove the shake class after the animation ends
+                setTimeout(() => {
+                    input.classList.remove('invalid-input');
+                }, 500); // Match this duration with your CSS animation duration
+            } else {
+                input.classList.remove('invalid-input'); // Remove the invalid class if there's input
+            }
+        });
+
+        // Optional: You can also add a validation for email format
+        if (input.type === 'email') {
+            input.addEventListener('input', function() {
+                const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
+                if (!isValidEmail) {
+                    input.classList.add('invalid-input');
+                    // Remove the shake class after the animation ends
+                    setTimeout(() => {
+                        input.classList.remove('invalid-input');
+                    }, 500); // Match this duration with your CSS animation duration
+                } else {
+                    input.classList.remove('invalid-input');
+                }
+            });
+        }
     });
 
 </script>
 
 
-<script>
-    // Select the password input container div
-    const passwordContainer = document.querySelector('#password-container');
 
-    // Add event listener for when the input loses focus (blur event)
-    const passwordInput = document.querySelector('#password');
 
-    // When the input loses focus, apply the effects to the div container
-    passwordInput.addEventListener('blur', function() {
-        // Change border color of the entire container div to light green
-        passwordContainer.classList.add('blur');
 
-        // Add the shake effect to the entire container div
-        passwordContainer.classList.add('shake');
-        
-        // Remove the shake effect after the animation completes (500ms)
-        setTimeout(function() {
-            passwordContainer.classList.remove('shake');
-        }, 500);
-    });
-
-</script>

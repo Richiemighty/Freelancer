@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="images/freelancer.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="bootstrap-5.3.3/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3/bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=notifications" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bbacfaf443.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav >
+        <div class="left">
+            <div class=" free logo"><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" alt=""></div>
+            <div class="nav-left">
+                <div class="browse position-relative">
+                    <span class="material-symbols-outlined">explore</span>
+                    <span class="drop p-2">Browse</span>
+
+
+
+                    <div class="dropdown-content" id="browse">
+                        <div class="dropdown-triangle" id="triangle1"></div>
+
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>                            
+                            <input type="text" id="search-input" placeholder="Search Google or type a URL" class="search-input" autocomplete="off">
+                        </div>
+
+                        <div><h6>Search</h6></div>
+                        <div class="d-flex">
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-trophy"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Contest
+                                        <p class="text-black">Unleash your talent and win Freelancer contests!</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-circle-user"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Freelancers
+                                        <p class="text-black">Find top-rated freelancers for your project</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-bookmark"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Bookmark
+                                        <p class="text-black">Access your saved project and contest opportunities</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="mt-5"><h6>Freelancing Tools</h6></div>
+
+
+
+                        <div class="d-flex">
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Verified by Freelancer
+                                        <p class="text-black">Increase your chances of winning projects</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-star text-warning"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Preferred Freelancer
+                                        <p class="text-black">Access exclusive projects and stand out</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><img src="images/freelancer.png" alt=""></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Memberships
+                                        <p class="text-black">Get earning opportunities and savings</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><img src="https://cdn-icons-png.freepik.com/512/11985/11985835.png" alt="" id="lil-big"></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Exams
+                                        <p class="text-black">Prove your skills to win more work</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mt-5"><h6>Clients Tools</h6></div>
+
+                        <h6></h6>
+
+                        <div class="d-flex">
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mt-5"><h6>Explore Freelancer</h6></div>
+
+                        <div class="d-flex">
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><span class="material-symbols-outlined text-warning">diamond</span></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Showcase
+                                        <p class="text-black">Get inspiration from the world's best</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lil-a-box d-flex gap-2 p-2">
+                                <div class="box-icon"><i class="fa-solid fa-folder-plus"></i></div>
+                                <div class="icon-text">
+                                    <a href="" type="button">Project
+                                        <p class="text-black">Explore exciting new project opportunities now!</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+        
+
+
+
+
+
+                <div class="browse position-relative">
+                    <span class="material-symbols-outlined">work</span>
+                    <span class="drop p-2">Manage</span>
+                    <div class="dropdown-content" id="manage">
+                        <div class="dropdown-triangle" id="triangle2"></div>
+                        <div class="d-flex justify-content-between p-0 align-items-center" >
+                            <div><h6 class="m-0 px-2">Recent Projects</h6></div> <div><a class="view-all" href="">View All</a></div>
+                        </div>
+                        <div class="text-center mt-3 mb-3">
+                            You do not have any active projects. <br> <a href="">Create one</a> to get started!
+                        </div>
+                        <div class="d-flex justify-content-between p-0 align-items-center" >
+                            <div><h6 class="m-0 px-2">List </h6></div> <div><a class="view-all" href="">View All</a></div>
+                        </div>
+
+                        <div><a href="" type="button" class="btn-type"> <i class="fa-regular fa-heart text-danger pe-3"></i>Favourites</a></div>
+                        <div><a href="" type="button" class="btn-type"><i class="fa-regular fa-folder text-secondary pe-3"></i>My Hires</a></div>
+                        <div><a href="" type="button" class="btn-type"><i class="fa-regular fa-eye text-secondary pe-3"></i>Recently Viewed</a></div>
+
+                        <div class="d-flex justify-content-between p-0 align-items-center mt-3" >
+                            <div><h6 class=" px-2">Tasklists </h6></div> <div><a class="view-all" href="">View All</a></div>
+                        </div>
+                        <div class="d-flex justify-content-between p-0 align-items-center mt-0" >
+                            <div><h6 class="px-2">Project Update </h6></div> <div><a class="view-all" href="">View All</a></div>
+                        </div>
+
+                        <div class="text-center mt-3 mb-3">
+                            You do not have any active projects. <br> <a href="">Browse projects</a>  to start work and give updates.
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+        
+                <div class="browse position-relative">
+                    <span class="material-symbols-outlined">group</span>
+                    <span class="drop p-2">Group</span>
+                    <div class="dropdown-content" id="manage">
+                        <div class="dropdown-triangle" id="triangle2"></div>
+
+                        <div class="d-flex justify-content-between p-0 align-items-center mt-0" >
+                            <div><h6 class="p-0">Group </h6></div> <div><a class="view-all" href="">View All</a></div>
+                        </div>
+
+                        <div class="group mt-3">
+                            <p><a href="">Freelancer Onboarding</a></p>
+                            <p>Updated about 2 hours ago</p>
+                        </div>
+                        <div class="group">
+                            <p><a href="">Freelancer Onboarding</a></p>
+                            <p>Updated about 2 hours ago</p>
+                        </div>
+                        <div class="group">
+                            <p><a href="">Freelancer Onboarding</a></p>
+                            <p>Updated about 2 hours ago</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+
+
+        <div class="right">
+            <div class="nav-right">
+                <div class="icons position-relative">
+                    <button id="btn">
+                        <i class="fa-regular fa-bell"></i>            
+                    </button>
+
+                    <div class="dr">
+                        <div class="dropdown-triangle" id="triangle3"></div>
+                        <div class="dropdown-content px-0 bell" id="notifications">
+    
+                            <div class="d-flex justify-content-between px-3 align-items-center mt-0" >
+                                <div><h5 class="p-0 ">Notifications</h5></div>
+                            </div>
+    
+                            <a href="" class="notify">
+                                <div class="notifications mt-3 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="notify">
+                                <div class="notifications mt-0 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="notify">
+                                <div class="notifications mt-0 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="notify">
+                                <div class="notifications mt-0 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="notify">
+                                <div class="notifications mt-0 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="notify">
+                                <div class="notifications mt-0 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="notify">
+                                <div class="notifications mt-0 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="notify">
+                                <div class="notifications mt-0 px-3 py-2">
+                                    <div class="prof-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                    </div>
+                                    <div class="notification-text">
+                                        <p class="post-text">@quartermaster posted in Freelancer Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                        <p class="time">3 months ago</p>
+                                    </div>
+                                </div>
+                            </a>
+    
+    
+    
+                        </div>
+    
+                    </div>
+
+
+                </div>
+    
+
+
+
+
+                <div class="icons position-relative">
+                    <button type="button" class="btn btn-primary position-relative" id="btn">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <span class="position-absolute  translate-middle badge rounded-pill bg-danger">68</span>
+                    </button>
+
+                    <div class="dr">
+                        <div class="dropdown-triangle" id="triangle3"></div>
+                        <div class="dropdown-content px-0 bell" id="notifications2">
+    
+                            <div class="d-flex justify-content-between px-3 align-items-center mt-0">
+                                <div class="tog-btn">
+                                    <button id="recentBtn" class="active">Recent Projects
+                                        <div class="btn-content position-absolute">
+
+                                            <div class="overflow">
+                                                <a href="" class="notify">
+                                                    <div class="notifications mt-0 px-3 py-2 w-100">
+                                                        <div class="prof-img">
+                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                                        </div>
+                                                        <div class="notification-text text-start w-100">
+                                                            <p class="post-text w-100">@quartermaster posted in Freelancer a Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                                            <p class="time">3 months ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="" class="notify">
+                                                    <div class="notifications mt-0 px-3 py-2 w-100">
+                                                        <div class="prof-img">
+                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                                        </div>
+                                                        <div class="notification-text text-start w-100">
+                                                            <p class="post-text w-100">@quartermaster posted in Freelancer a Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                                            <p class="time">3 months ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="" class="notify">
+                                                    <div class="notifications mt-0 px-3 py-2 w-100">
+                                                        <div class="prof-img">
+                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                                        </div>
+                                                        <div class="notification-text text-start w-100">
+                                                            <p class="post-text w-100">@quartermaster posted in Freelancer a Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                                            <p class="time">3 months ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="" class="notify">
+                                                    <div class="notifications mt-0 px-3 py-2 w-100">
+                                                        <div class="prof-img">
+                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                                        </div>
+                                                        <div class="notification-text text-start w-100">
+                                                            <p class="post-text w-100">@quartermaster posted in Freelancer a Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                                            <p class="time">3 months ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="" class="notify">
+                                                    <div class="notifications mt-0 px-3 py-2 w-100">
+                                                        <div class="prof-img">
+                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                                        </div>
+                                                        <div class="notification-text text-start w-100">
+                                                            <p class="post-text w-100">@quartermaster posted in Freelancer a Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                                            <p class="time">3 months ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="" class="notify">
+                                                    <div class="notifications mt-0 px-3 py-2 w-100">
+                                                        <div class="prof-img">
+                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4B5rxKwG5ce-sS1UBdkx586i9lIevtbiCg&s" alt="">
+                                                        </div>
+                                                        <div class="notification-text text-start w-100">
+                                                            <p class="post-text w-100">@quartermaster posted in Freelancer a Onboarding: IF YOU ARE LOOKING FOR WORK, WE HAVE LOTS OF IT HELPING…</p>
+                                                            <p class="time">3 months ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+    
+                                            </div>
+                                        </div>
+                                    </button>
+
+                                </div>
+                            
+                                <div class="tog-btn">
+                                    <button id="savedBtn">Saved Alert
+                                        <div class="btn-content position-absolute bg-white " id="hide-btn-content">
+
+
+                                            <div class="text-center alerts mt-5">
+                                                <i class="fa-regular fa-bell"></i>
+                                                <p>Receive alerts for new projects based on your saved searches. Create one to start receiving notifications.</p>    
+
+                                                <a href="" type="button" class="search-btn">Search Project</a>
+                                            </div>
+
+
+                                        </div>
+                                    </button>
+                                </div>
+                                
+                                <div class="gear">
+                                    <button id="gear-btn">
+                                        <i class="fa-solid fa-gear text-primary"></i>
+                                        <div class="btn-content position-absolute bg-white" id="settings-btn">
+                                            <div class="not-set d-flex gap-2 p-4">
+                                                <div id="chevron-left"><i class="fa-solid fa-chevron-left"></i></div>
+                                                <div>NOTIFICATION SETTINGS</div>
+                                            </div>
+
+                                            <div class="ddd text-start px-4">
+                                                <h6>Notifications</h6>
+                                                <p>Receive notifications from the Freelancer app.     </p>
+
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">On this Device                                                    </label>
+                                                </div>
+
+                                                <h6>Saved Alerts</h6>
+
+                                                <div class="text-center alerts">
+                                                    <img src="https://www.f-cdn.com/assets/main/en/assets/illustrations/comms/notification.svg" alt="">
+                                                    <p>Receive alerts for new projects based on your saved searches. Create one to start receiving notifications.</p>    
+
+                                                    <a href="" type="button" class="search-btn">Search Project</a>
+                                                </div>
+
+                                                <h6>My Skills</h6>
+                                                <p>Receive notifications for any new project tagged under these category of skills.</p>
+
+                                                <div class="form-check form-switch mt-3">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">ANOVA</label>
+                                                </div>
+                                                <div class="form-check form-switch mt-3">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Data Entry</label>
+                                                </div>
+                                                <div class="form-check form-switch mt-3">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Data Processing</label>
+                                                </div>
+                                                <div class="form-check form-switch mt-3">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Excel</label>
+                                                </div>
+                                                <div class="form-check form-switch mt-3">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Google Spreadsheet</label>
+                                                </div>
+                                                <div class="form-check form-switch mt-3">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Machine Learning</label>
+                                                </div>
+                                                  
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                                                        
+
+
+                        </div>
+                    </div>
+
+                </div>
+    
+    
+                <div class="icons position-relative">
+                    <button id="btn">
+                        <i class="fa-regular fa-message"></i>
+
+                        <div class="dr">
+                            <div class="dropdown-triangle" id="triangle3"></div>
+                            <div class="dropdown-content p-3 bell" id="notifications">
+        
+                                <div class="d-flex justify-content-between p-3 align-items-center mt-0" >
+                                    <div><h6 class="p-0">Group </h6></div> <div><a class="view-all" href="" id="view-all">View All</a></div>
+                                </div>
+
+                                <div class="text-center alerts">
+                                    <img src="https://www.f-cdn.com/assets/main/en/assets/messaging/live-chat.svg" alt="">
+                                    <p>Receive alerts for new projects based on your saved searches. Create one to start receiving notifications.</p>    
+                                </div>
+
+                
+                            </div>
+                        </div>
+                            
+                    </button>
+                </div>
+            </div>
+
+    
+            <div class="right-post">
+                <div class="btn">
+                    <a href="" type="button" id="post">Post a Project</a>
+                </div>
+        
+                <div class="profile">
+                    <div class="profile-img"><img src="images/blank-profile-picture-973460_960_720.webp" alt=""></div>
+                    <div class="name"><h6>@Richiemighty</h6> <p>$1000 USD</p></div>
+    
+                    <div class="dr">
+                        <div class="dropdown-triangle" id="triangle4"></div>
+                        <div class="dropdown-content p-4 bell" id="notifications3">
+                            <!-- <div class="overflow"> -->
+                                <h6 class="pb-4 "> Account  </h6>
+                                <a href="profile.html" type="button" class="profile-atags">View profile</a>
+                                <a href="membership.html" type="button" class="profile-atags">Membership</a>
+                                <a href="" type="button" class="profile-atags">Account Analytics</a>
+                                <a href="" type="button" class="profile-atags">Bid Insights</a>
+                                <a href="settings.html" type="button" class="profile-atags">Settings</a>
+                                <a href="" type="button" class="profile-atags d-flex align-items-center position-relative">Theme: Light <i class="fa-solid fa-chevron-down"></i></a>
+                                <h6 class=""> Finances  </h6>
+                                <a href="" type="button" class="profile-atags d-flex align-items-center position-relative">Balance <p>$1000.00 USD</p></a>
+                                <a href="" type="button" class="profile-atags">Add funds</a>
+                                <a href="" type="button" class="profile-atags">Transaction history</a>
+                                <a href="" type="button" class="profile-atags">Financial dashboard</a>
+                                <a href="" type="button" class="profile-atags">Payment sharing</a>
+                                <a href="" type="button" class="profile-atags">Support</a>
+                                <a href="" type="button" class="profile-atags">Logout</a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </nav>
+
+
+
+    <nav id="second-nav">
+        <div class="browse active"><button>Dashboard</button></div> <!-- Initially active -->
+        <div class="browse"><button>List</button></div>
+        <div class="browse"><button>Tasklist</button></div>
+        <div class="browse"><button>My Project</button></div>
+        <div class="browse"><button>Inbox</button></div>
+        <div class="browse"><button>Feedback</button></div>
+        <div class="browse"><button>Free Credit</button></div>
+        <div class="browse"><button>Project Updates</button></div>
+    </nav>
+    
+
+            
+    <!-- Dashboard contents -->
+    <div class="dash-dis">
+        <div class="dash-cont justify-content-between d-flex w-100 h-100  flex-wrap">
+
+            <div class="dash-lft">
+
+
+                <div class="one-dash">
+
+
+                    <!-- <div class="pic-dash my-5 ms-5 col-lg-2 col-md-2 col-3"></div> -->
+
+                    <!-- <div class="word-pic "> -->
+
+                    <div class="phone-dis w-100 p-4">
+                        <p class="fw-bolder boolld text-start">Welcome to Freelancer</p>
+                        <p class=text-start">If you are new to our website, here are a few things to get you started! <br>4 days ago</p>
+
+                        <div class="phone-search d-flex align-items-start">
+                            <i class="fa-solid fa-magnifying-glass me-4"></i>
+                            <span class=""><a href="" class="fw-bolder">Find work</a> that interests you by browsing for projects or contests posted by clients.</span>
+                        </div>
+
+
+                        <div class="phone-search d-flex align-items-start mt-4">
+                            <i class="fa-solid fa-plus me-4"></i>
+                            <span class=""><a href="" class="fw-bolder">Create a quote</a> and send to your clients. Define the title, description, items and cost of your work. <br>
+                                You can also <a href="" class="fw-bolder">Post a project</a> and start receiving bids from skilled freelancers within minutes.
+                            </span>
+                        </div>
+
+
+                        <div class="phone-search d-flex align-items-start">
+                            <span class="material-symbols-outlined me-4">work</span>
+                            <span class=" ">
+                                <a href="" class="fw-bolder">Manage</a> your projects, contests, lists and tasks on the go in just a few steps.
+                            </span>
+                        </div>
+                        <div class="phone-search d-flex align-items-start mt-4">
+                            <span class="material-symbols-outlined me-4 ">chat_bubble</span>
+                            <span class=" ">
+                                Chat and collaborate with your clients via <a href="" class="fw-bolder">Messenger</a>
+                            </span>
+                        </div>
+                        <div class="phone-search d-flex align-items-start my-4">
+                            <span class="material-symbols-outlined me-4">menu</span>
+                            <span class="">
+                                On the <a href="" class="fw-bolder">Menu</a> page you can manage your accounts and withdraw funds from anywhere.
+                            </span>
+                        </div>
+                        <!-- <hr> -->
+                    </div>
+
+
+    
+
+
+
+                    <!-- </div> -->
+
+                    <div class="phone-dis w-100">
+                        
+                        <div class="almost d-flex">
+                            <div class="p-2"><img src="https://www.f-cdn.com/assets/main/en/assets/default-notification-image.png?image-optimizer=force&format=webply&width=120" alt=""></div>
+                            <div>
+                                <p class="text-start">You are almost ready to start earning money as a freelancer, simply complete the following steps: <br>4 days ago</p>
+    
+                            </div>
+    
+                        </div>
+
+                        <div class="icon-dash ">
+    
+                            <div class="togeda ">
+                                <span class="material-symbols-outlined pe-4 ps-1">mail</span>
+                                <div class="words w-75">
+                                    <h6>Email Address</h6>
+                                    <p >Verify your email address to make your profile more secure</p>
+                                </div>
+                            </div>
+
+                            <div class="btn1 d-flex align-items-center justify-content-end">
+                                <button class="btn btn-same fw-bolder" disabled>Already verified</button>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="icon-dash ">
+
+                            <div class="togeda ">
+                                    <span class="material-symbols-outlined pe-4 ps-1">person</span>
+                                    <div class="words w-75">
+                                        <h6>Update your profile</h6>
+                                        <p class="text-start">A complete profile increases your chance of getting hired</p>
+                                    </div>
+                            </div>
+                            <div class="btn1 d-flex align-items-center justify-content-end">
+                                <button id="border">Profile Page</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="icon-dash ">
+                            <div class="togeda">
+                                <span class="material-symbols-outlined pe-4 ps-1">desktop_mac</span>
+                                <div class="words w-75">
+                                    <h6>Place your first bid</h6>
+                                    <p class="text-start">Browse through projects and place your first bid</p>
+                                </div>
+                            </div>
+                            <div class="btn1 d-flex align-items-center justify-content-end">
+                                <button class="btn btn-diff  h-50 d-flex align-items-center justify-content-center fw-bolder">Browse Projects</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="dash-rgt">
+
+                <div class="rgt1">
+                    <div class="fw-bold">Set up your account</div>
+                    <div class=""> 60% done</div>
+                </div>
+
+
+                <div class="rgt2 mt-3">
+                    <div class="rgt2-long">
+                        <div class="long-blue bg-primary"></div>
+                    </div>
+
+
+
+                </div>
+
+
+                
+                <div class="rgt3 mt-3">
+                    <p class="">Having a complete verified account will increase the chances of getting jobs.</p>
+                </div>
+
+
+
+                <div class="rgt3 mt-3">
+                    <p class="fw-bolder">Complete your account setup by:</p>
+
+                    <button class="rgt-pink btn">
+                        <div class="left-pinkk d-flex align-items-center ">
+                            <span class="material-symbols-outlined p-2">verified_user</span>
+
+                            <!-- <div class="pink-wrd"> -->
+                                <span class="">Add your address</span>
+                            <!-- </div> -->
+                            
+                        </div>
+                        <span class="">+ 5%</span>
+                    </button>
+
+                </div>
+
+
+
+
+                <div class="line mt-4"></div>
+
+                <div class="rgt5 d-flex justify-content-between mt-4">
+                    <span class="fw-bold">Balance</span>
+                    <span class="col-pink d-flex align-items-center fw-bold"><span class="material-symbols-outlined me-2">add_circle</span><span>Add funds</span>
+                </div>
+
+
+
+                <div class="rgt6 d-flex justify-content-between mt-4">
+                   <div class="rgt-rgt6 d-flex align-items-start">
+
+                        <span class=" us-dol"> <img src="https://www.f-cdn.com/assets/main/en/assets/flags/us.png" alt="">US Dollar</span>
+                   </div>
+
+                   <span class="">$1000.00 USD</span>
+
+                </div>
+
+
+
+                <div class="line mt-4"></div>
+
+
+
+                <div class="rgt7 justify-content-between mt-3">
+                    <span class="fw-bold">Jobs near you</span>
+                </div>
+                <div class="rgt8 mt-3">
+                    <span class="fw-bold hov-pink">React JS Real Estate Website Development</span>
+                    <div class="job-space w-100 d-flex justify-content-between mt-2">
+                        <div class="lft-job d-flex">
+                            <span class="material-symbols-outlined pinkkk">desktop_mac</span>
+                            <span class="ms-2">Remote</span>
+                        </div>
+                        <span>$12,500 - 37,500 USD</span>
+                    </div>
+                </div>
+                <div class="rgt8 mt-3">
+                    <span class="fw-bold hov-pink">React JS Real Estate Website Development</span>
+                    <div class="job-space w-100 d-flex justify-content-between mt-2">
+                        <div class="lft-job d-flex">
+                            <span class="material-symbols-outlined pinkkk">desktop_mac</span>
+                            <span class="ms-2">Remote</span>
+                        </div>
+                        <span>$12,500 - 37,500 USD</span>
+                    </div>
+                </div>
+                <div class="rgt8 mt-3">
+                    <span class="fw-bolder hov-pink">React JS Real Estate Website Development</span>
+                    <div class="job-space w-100 d-flex justify-content-between mt-2">
+                        <div class="lft-job d-flex">
+                            <span class="material-symbols-outlined pinkkk">desktop_mac</span>
+                            <span class="ms-2">Remote</span>
+                        </div>
+                        <span>$12,500 - 37,500 USD</span>
+                    </div>
+                </div>
+                <div class="rgt8 mt-3">
+                    <span class="fw-bolder hov-pink">React JS Real Estate Website Development</span>
+                    <div class="job-space w-100 d-flex justify-content-between mt-2">
+                        <div class="lft-job d-flex">
+                            <span class="material-symbols-outlined pinkkk">desktop_mac</span>
+                            <span class="ms-2">Remote</span>
+                        </div>
+                        <span>$12,500 - 37,500 USD</span>
+                    </div>
+                </div>
+                <div class="rgt8 mt-3">
+                    <span class="fw-bolder hov-pink">React JS Real Estate Website Development</span>
+                    <div class="job-space w-100 d-flex justify-content-between mt-2">
+                        <div class="lft-job d-flex">
+                            <span class="material-symbols-outlined pinkkk">desktop_mac</span>
+                            <span class="ms-2">Remote</span>
+                        </div>
+                        <span>$12,500 - 37,500 USD</span>
+                    </div>
+                </div>
+                <div class="rgt8 mt-3">
+                    <span class="fw-bolder hov-pink">React JS Real Estate Website Development</span>
+                    <div class="job-space w-100 d-flex justify-content-between mt-2">
+                        <div class="lft-job d-flex">
+                            <span class="material-symbols-outlined pinkkk">desktop_mac</span>
+                            <span class="ms-2">Remote</span>
+                        </div>
+                        <span>$12,500 - 37,500 USD</span>
+                    </div>
+                </div>
+
+
+
+                <div class="line"></div>
+
+
+                <div class="rgt9 mt-4">
+                    <span class="fw-bolder ">Polls</span>
+                </div>
+                <div class="rgt10 mt-4">
+                    <span class="fw-bolder">What is your gender?</span>
+                </div>
+                <div class="rgt11 mt-4">
+                    <form id="optionsForm">
+                        <label for="option1" class="mt-1">
+                            <input type="radio" id="option1" name="options" value="option1" required>
+                            Male
+                        </label>
+                        <br>
+                    
+                        <label for="option2" class="mt-1 ">
+                            <input type="radio" id="option2" name="options" value="option2">
+                            Female
+                        </label>
+                        <br>
+                    
+                        <button type="submit" id="submitBtn" class="btn my-5 fw-bold">Submit Answer</button>
+                        <button class="btn" id="skip-btn"><a href="" class=" fw-bold">Skip Question</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="work-done" id="foot">
+            <div class="a-tags" id="footers">
+                <div class="img-fre"><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" alt=""></div>
+                <div class="fir-left d-flex align-items-center">              
+                    <div class="globe text-white p-2"><i class="fa-solid fa-globe"></i></div>      
+                    <a type="button" href=""> US (International)/English </a>
+                </div>
+                <div class="fir-left d-flex align-items-center">              
+                    <div class="globe text-white p-2"><i class="fa-solid fa-circle-question"></i></div>      
+                    <a type="button" href=""> Help & Support </a>
+                </div>
+                <div class="fir-left d-flex align-items-center">              
+                    <div class="globe text-white p-2"><i class="fa-solid fa-person"></i></div>      
+                    <a type="button" href=""> Accessibility </a>
+                </div>
+            </div>
+           
+            <div class="foot-right">
+                <div class="a-tags" id="footers">
+                    <h5>Freelancer                    </h5>
+                    <p><a href="">Categories</a></p>
+                    <p><a href="">Projects</a></p>
+                    <p><a href="">Contests</a></p>
+                    <p><a href="">Freelancers</a></p>
+                    <p><a href="">Enterprise</a></p>
+                    <p><a href="">Logo Design</a></p>
+                    <p><a href="">AI Development</a></p>
+                    <p><a href="">Membership</a></p>
+                    <p><a href="">Prefered Freelancer Programs</a></p>
+                    <p><a href="">Translation</a></p>
+                    <p><a href="">Research</a></p>
+                    <p><a href="">Showcase</a></p>
+                    <p><a href="">AI for Developers</a></p>
+                    <p><a href="">Get Verified</a></p>
+                    <p><a href="">Desktop App</a></p>
+                </div>
+                
+                <div class="a-tags" id="footers">
+                    <h5>About                    </h5>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">How it works</a></p>
+                    <p><a href="">Security</a></p>
+                    <p><a href="">Investor</a></p>
+                    <p><a href="">Sitemap</a></p>
+                    <p><a href="">Logo</a></p>
+                    <p><a href="">News</a></p>
+                    <p><a href="">Teams</a></p>
+                    <p><a href="">Awards</a></p>
+                    <p><a href="">Press Release</a></p>
+                    <p><a href="">Careers</a></p>
+                </div>               
+                
+                <div class="a-tags" id="footers">
+                    <h5>Terms                     </h5>
+                    <p><a href="">Privacy Policy</a></p>
+                    <p><a href="">Terms and Condition </a></p>
+                    <p><a href="">Iphone Apps</a></p>
+                    <p><a href="">Copyright Policies </a></p>
+                    <p><a href="">Copyright Policies </a></p>
+                    <p><a href="">Fees and Charges</a></p>
+                </div>               
+                <div class="a-tags" id="footers">
+                    <h5>Partners                    </h5>
+                    <p><a href="">Escrow.com</a></p>
+                    <p><a href="">Loadshit </a></p>
+                    <p><a href="">Warrior Forum</a></p>
+                </div>
+                <div class="a-tags" id="footers">
+                    <h5>Apps                    </h5>
+
+                    <div class="google">
+                        <div class="google-apps"><a href=""><img src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg" alt=""></a></div>
+                        <div class="google-apps"><a href=""><img src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg" alt=""></a></div>    
+                    </div>    
+
+                    <div class="google-apps">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>   
+        
+        
+
+        <div class="last">
+            <div class="three-div">
+                <div class="three-divs">
+                    <h6>76,638,376                        </h6>
+                    <p>Registered Users                        </p>
+                </div>
+                <div class="three-divs">
+                    <h6>24,160,509                        </h6>
+                    <p>Total Jobs Posted                        </p>
+                </div>    
+            </div>
+
+            <div class="three-div no-block">
+                <p>Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)                    </p>
+                <p>Copyright © 2024 Freelancer Technology Pty Limited (ACN 142 189 759)</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+</html>
+
+<script>
+    // Get the buttons
+    const recentBtn = document.getElementById('recentBtn');
+    const savedBtn = document.getElementById('savedBtn');
+
+    // Add event listeners to toggle the 'active' class
+    recentBtn.addEventListener('click', function() {
+        recentBtn.classList.add('active');
+        savedBtn.classList.remove('active');
+    });
+
+    savedBtn.addEventListener('click', function() {
+        savedBtn.classList.add('active');
+        recentBtn.classList.remove('active');
+    });
+
+
+
+    // Get the gear button and settings menu
+    const gearButton = document.getElementById('gear-btn');
+    const settingsMenu = document.getElementById('settings-btn');
+    const chevronLeft = document.getElementById('chevron-left');
+
+    // Show the settings menu when the gear button is clicked
+    gearButton.addEventListener('focus', function() {
+        settingsMenu.style.display = 'block';
+    });
+
+    // Hide the settings menu when the chevron left is clicked
+    chevronLeft.addEventListener('click', function() {
+        settingsMenu.style.display = 'none';
+    });
+
+
+
+</script>
+
+<script>
+    // Get the toggle switch element
+    const toggleSwitch = document.getElementById('toggle-switch');
+
+    // Add an event listener to detect the change in state
+    toggleSwitch.addEventListener('change', function() {
+        if (toggleSwitch.checked) {
+            console.log('Switch is ON');
+        } else {
+            console.log('Switch is OFF');
+        }
+    });
+
+
+    // Get all the .browse elements
+    const browseItems = document.querySelectorAll('#second-nav .browse');
+
+    // Add click event to each .browse item
+    browseItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Remove 'active' class from all items
+            browseItems.forEach(browse => browse.classList.remove('active'));
+
+            // Add 'active' class to the clicked item
+            this.classList.add('active');
+        });
+    });
+
+
+
+</script>

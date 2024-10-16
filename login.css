@@ -198,66 +198,46 @@ button.btn{
 
 
 
-
-/* Default input style */
-input.form-control {
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
+#password-container {
+    position: relative; /* Allows positioning the eye icon inside the input */
+    width: 95%;
 }
 
-/* Remove border, shadow, and outline when input is focused */
-input.form-control:focus {
-    /* border: none; */
-    box-shadow: none;
+
+#password {
+    padding: 10px 30px; /* Reduced right padding for typing space */
+    width: 90%; /* Keep it at full width of the container */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    z-index: 0;
+    border-radius: 5px;
+}
+#password:focus {
+    border-color: #007bff; /* Change the border color on focus */
     outline: none;
 }
 
-/* Shake animation */
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+
+#togglePassword {
+    position: absolute;
+    right: 10px; /* Aligns the eye icon to the right inside the input */
+    top: 50%;
+    transform: translateY(-50%); /* Centers the eye icon vertically */
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    z-index: 1; /* Ensures the icon remains clickable above the input field */
 }
 
-/* Add shake class with the animation */
-input.form-control.shake {
-    animation: shake 0.5s ease; /* Shake animation for 0.5 seconds */
+.input-group-text {
+    background-color: red;
+    border: none;
+    z-index: 100;
+
 }
 
-
-
-
-
-
-
-
-
-/* Default div style */
-div.input-group {
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
-}
-
-/* Remove border, shadow, and outline when the input inside the div is focused */
-div.input-group:focus-within {
-    /* border: none; */
-    box-shadow: none;
-    outline: none;
-}
-
-/* Border turns light green when the user clicks out of the input inside the div (on blur) */
-div.input-group.blur {
-    border: 1px solid lightgreen; /* Border color on blur */
-    border-radius: 10px;
-}
-
-/* Shake animation */
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+.hover-focus-effect:focus {
+    border-color: #007bff; /* Change the border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow effect */
 }
 
 
@@ -266,18 +246,6 @@ div.input-group.blur {
 
 
 
-/* Add shake class with the animation */
-div.input-group.shake {
-    animation: shake 0.5s ease; /* Shake animation for 0.5 seconds */
-}
-
-
-
-/* Adjust the font size of the placeholder */
-input.form-control::placeholder {
-    font-size: 14px; /* Change this value to your desired font size */
-    color: rgba(0, 0, 0, 0.5); /* Optional: adjust the color of the placeholder */
-}
 
 
 
@@ -298,62 +266,99 @@ input.form-control{
 }
 
 
-.input-group span{
-    background-color: transparent;
-    /* border: none; */
+
+
+
+
+
+
+
+/* Remove shadow from all input fields */
+.form-control {
+    box-shadow: none; /* Removes shadow */
+    border: 1px solid #ced4da; /* Default border color */
+    transition: border-color 0.3s; /* Smooth transition for border color */
 }
 
-/* Remove the right border of the input */
-#password-container .form-control {
-    border-right: none; /* Remove the right border */
+/* Change border color to blue on hover */
+.form-control:hover {
+    border-color: blue; /* Border color on hover */
 }
 
-/* Optionally, remove the right border of the input group span to create a seamless look */
-#password-container .input-group-text {
-    border-left: none; /* Remove the left border of the input group text */
+/* Also apply the same to the input-group if necessary */
+.input-group {
+    box-shadow: none; /* Removes shadow */
 }
 
-
-
-/* Add a border to the password container on hover */
-#password-container:hover {
-    border: 1px solid transparent; 
-    /* Light blue border color */
-    border-radius: 10px; /* Optional: add slight border radius to match Bootstrap styling */
-}
-
-/* Ensure the input and the input group text have no conflicting borders */
-#password-container .form-control {
-    border-right: none; /* Remove the right border */
-
-}
-
-#password-container .input-group-text {
-    border-left: none; /* Remove the left border of the input group text */
+/* Ensure the eye toggle button does not affect the input hover effect */
+.input-group-text {
+    border: none; /* No border for the eye icon container */
+    background: transparent; /* Make background transparent */
 }
 
 
-/* Apply box-sizing to ensure padding and border do not cause overflow */
-#password-container {
-    border: 1px solid transparent; /* Set the original border color */
-    border-radius: 10px; /* Optional: maintain border radius */
-    box-sizing: border-box; /* Ensure padding and border are included in total width */
+
+
+
+
+/* Remove outline and shadow when the input is focused */
+input.form-control:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: none; /* Ensure no shadow on focus */
+    border-color: blue; /* Optional: Change border color when focused */
 }
 
-/* Add an outline to the password container on hover */
-#password-container:hover {
-    outline: 1px solid lightblue; /* Light blue outline color */
-    outline-offset: -1px; /* Adjust the outline offset to maintain the original size */
+
+
+/* Shaking animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
 }
 
-/* Ensure the input and the input group text have no conflicting borders */
-#password-container .form-control {
-    border-right: none; /* Remove the right border */
+/* Change border color to green when input is invalid on blur */
+.invalid-input {
+    border-color: 1px solid green; /* Change border color to green */
+    animation: shake 0.5s; /* Shake animation */
 }
 
-#password-container .input-group-text {
-    border-left: none; /* Remove the left border of the input group text */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
