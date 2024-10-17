@@ -46,7 +46,7 @@
                     </div>
 
                     <!-- Centered Login Form -->
-                    <form action="" class="login-form d-flex flex-column align-items-center">
+                    <form action="dashboard.html" class="login-form d-flex flex-column align-items-center" id="loginForm">
                         <div class="mb-4 w-100">
                             <input type="text" class="p-2 form-control hover-focus-effect" placeholder="Email or Username" required>
                         </div>
@@ -153,6 +153,24 @@
                 }
             });
         }
+    });
+
+</script>
+
+
+<script>
+    // Select the form
+    const loginForm = document.getElementById('loginForm');
+
+    // Add an event listener for form submission
+    loginForm.addEventListener('submit', function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // You can add form validation here if needed
+
+        // Redirect to dashboard.html after form submission
+        window.location.href = 'dashboard.html';
     });
 
 </script>

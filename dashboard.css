@@ -833,7 +833,15 @@ section{
 
 
 
+/* DASHBOARD  */
 
+.dash-dis{
+    background-color: rgb(250,250,255);
+
+}
+.dash-cont{
+    display: flex;
+}
 
 .dash-rgt{
     width: 30%;
@@ -856,7 +864,7 @@ button.rgt-pink{
     background-color: white;
     display: flex;
     align-items: center;
-    width: 105%;
+    width: 100%;
     border-radius: 5px;
     font-size: 0.9rem;
     border: 1px solid red;
@@ -981,6 +989,9 @@ span{
 .btn-diff{
     color: rgb(230,2,120);
     transition: transform 1s ease;
+    padding: 5px 15px;
+    border-radius: 6px;
+    border: none;
 }
 .btn-diff:hover{
     color: rgb(230,2,120);
@@ -1017,10 +1028,10 @@ span{
 
 
 
-.btn{
-    z-index: -10;
-}
 
+.a-v{
+    padding: 6px 10px;
+}
 
 
 
@@ -1084,6 +1095,8 @@ span{
 
 
 
+
+
 footer{
     padding-left: 90px;
     padding-right: 90px;
@@ -1095,7 +1108,7 @@ footer{
     display: flex;
     gap: 5px;
     background-color: rgb(18,21,27);
-    height: 70vh;
+    /* height: 70vh; */
 }
 #footers img{
     width: 80%;
@@ -1207,304 +1220,424 @@ footer a:hover{
 
 
 
+
+
+/* Initial footer (hidden) */
+.foot {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    padding: 0;
+    width: 320px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    transform: translateY(90%); 
+    /* Initially hidden off-screen */
+    transition: all 0.7s ease;
+}
+
+/* Footer when toggled open */
+.footer-open {
+    transform: translateY(0); /* Bring the footer up to view */
+}
+
+/* Top section */
+.top-show {
+    width: 100%;
+    margin: 0;
+    height: 10%;
+    background-color: rgb(18, 21, 27);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.f-search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+
+
+.top-show p{
+    margin-left: 20px;
+}
+.btn2{  
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+}
+.btn2:hover{
+    background-color: rgba(192, 192, 192, 0.185);
+}
+
+
+
+.mess-cont{
+    height: 90%;
+    top: 12%;
+}
+
+
+.search-fff{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    padding: 0;
+    /* background-color: greenyellow; */
+}
+.inp-srch-foot{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    margin: auto;
+}
+
+
+
+
+.inp-srch-foot input{
+    width: 70%;
+    border: none;
+    outline: none;
+}
+.inp-srch-foot:hover{
+    border: 1px solid rgb(39, 112, 209);
+}
+.inp-srch-foot:focus-within{
+    border: 1px solid rgb(39, 112, 209);
+}
+.mess-cont a{
+    color: rgb(39, 112, 209);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+.mess-cont a:hover{
+    text-decoration: underline;
+}
+.mess-cont img{
+    width: 100px;
+    height: 100px;
+}
+.phone-footer{
+    height: 56px;
+    background-color: rgb(18,21,27);
+    z-index: 5;
+}
+.phn-down-btn{
+    width: 16.67%;
+    border-radius: 0%;
+}
+.span-btn{
+    color: white;
+}
+.phn-down-btn:hover{
+    background-color: rgb(32, 42, 53);
+}
+.phn-down-btn:focus .span-btn{
+    color: rgb(39, 112, 209);
+}
+.menu-phn{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.hamb-open{
+    transform: translateY(0);
+}
+
+
+
+
+
+.phone-footer button:hover span{
+    color: blue;
+}
+
+
+
+.buttom-search{
+    width: 100%;
+    height: 93vh;
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+    /* transform: translateY(110vh); */
+    /* transition: all 1s linear; */
+    display: none;
+    z-index: -1;
+    background-color: white;
+}
+
+.phone-footer button:hover .buttom-search{
+    /* transform: translateY(0); */
+    display: block;
+
+}
+
+#phn-search {
+    background-image: url(https://www.f-cdn.com/assets/main/en/assets/navigation/browse/browse-v2.jpg);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    /* background-size: cover; */
+    background-color: white;
+}
+
+.cont{
+    width: 100%;
+    height: 60%;
+    /* background-color: green; */
+    margin-top: 40%;
+}
+.projects{
+    height: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    width: 90%;
+    border-radius: 7px;
+    margin: auto;
+    text-align: start;
+    background-color: white;
+    margin-top: 15px;
+}
+#phn-search a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#phn-manage{
+    /* padding: 20px; */
+    text-align: start;
+}
+
+
+#phn-manage #manage{
+    border: none;
+    box-shadow: 0 0 0 white;
+}
+
+
+
+
+#add-phn{
+    background-image: url(https://www.f-cdn.com/assets/main/en/assets/job-post/redesign/bird.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.div{
+    height: 80%;
+    margin-top: 20%;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    padding: 30px 20px;
+
+
+
+}
+
+.img img{
+    width: 130px;
+}
+.img{
+    text-align: start;
+
+}
+
+.input input{
+    width: 100%;
+    height: 100px;
+}
+
+.next{
+    width: 100%;
+    /* height: 60px; */
+    padding: 10px ;
+    background-color: rgb(197,61,108);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.next:hover{
+    background-color: rgb(158, 40, 81);
+}
+
+.buttom-search #notifications3{
+    height: 93%;
+    width: 100%;
+}
+
+
+.boxe{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 4px 4px gray;
+
+}
+.b-imag{
+    height: 50%;
+}
+.boxe img{
+    width: 100%;
+}
+
+.b-text{
+    position: absolute;
+    bottom:  5px;
+}
+.b-text {
+    font-size: 0.8rem;
+    text-align: start;
+}
+
+#group-phone {
+    overflow-y: auto ;
+    z-index: 0;
+}
+
+#group-phone nav{
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1350px) {
-    .hire{
-        width: 500px;
-        
-    }
-    .hire h1{
-        font-size: 41px;
-    }
-    .hire ul li{
-        font-size: 20px;
-    }
-    section .container-fluid .on img{
-        display: none;
-    }
-    .make-it {
-        display: flex;
-        height: 260px;
-        align-items: end;
-        padding-bottom: 30px;
-        margin: 0;
-        /* background-color: green; */
-    }
-    section{
-        padding-right: 0;
-    }
-    section .container-fluid{
-        background-image: url(https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-bg-t.jpg);
-        background-position: right top;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 0;
-    }
-    .big{
-        width: 100%;
-        margin-top: 10px;
-    }
-    .inner{
-        width: 48%;
-    }
-    .ai-content{
-        height: 90%;
-    }
     footer{
         padding-left: 0;
         padding-right: 0;
         background-color: rgb(18,21,27);
     }
+    nav{
+        padding: 5px 0;
+    }
+    .profile{
+        padding-right: 0;
+        width: 13rem;
+    }
+    .dash-dis{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .profile{
+        position: static;
+    }
+    .right-post{
+        position: relative;
+    }
+    #notifications3{
+        position: absolute;
+        left: 0;
+    }
+    #triangle4{
+        left: 16rem;
+    }
 
 }
-@media (max-width: 999px) {
-    .hire{
-        width: 500px;
+
+@media (max-width: 1200px) {
+    #browse{
+        width: 56rem;
+        height: 70rem;
     }
-    .hire h1{
-        font-size: 48px;
-    }
-    .hire ul li{
-        font-size: 20px;
-    }
-    .right{
-        display: none;
-    }
-    .contain{
-        width: fit-content;
-        justify-content: end;
-    }
-    .make-it h1{
-        font-size: 41px;
-    }
-    .inner p{
-        font-size: 15px;
-    }
-    section .container-fluid h2{
-        font-size: 20px;
-    }
-    .chat{
-        display: none;
-    }
+
 }
+
 @media (max-width: 960px) {
-    .third-section #transform {
-        height: 320vh;
-    }
-    .AI{
-        display: block;
-        /* height: 100vh; */
-        margin: auto;
-    }
-    .AI .div-img{
-    text-align: center;
-    margin: auto;
-    }
-    .AI .div-img img{
-        height: 40%;
-        width: 60%;
-        margin: auto;
-    }
-    .ai-content{
-        margin: auto;
-        margin-top: 10px;
-    }
     #foot{
         display: block;
     }
     .foot-right{
         width: 100%;
     }
-}
-@media (max-width: 935px) {
-    .iwatch{
-        width: 100%;
-        padding: 0;
-    }
-    .tap {
-        margin-top: 5px;
-    }
-    .tap .on{
+    .drop{
         display: none;
     }
-    .mid-tap{
-        width: 100%;
+    #browse{
+        width: 45rem;
+        height: 70rem;
+        left: -7rem;
     }
-    .mid-tap .big{
-        width: 100%;
+    #triangle1{
+        left: 8rem;
     }
-}
-@media (max-width: 900px) {
-    main{
-        height: 100%;
+    #triangle2{
+        left: 9rem;
     }
-    .hire div h1{
-        padding-bottom: 0;
-        margin-bottom: 0;
-        font-size: 45px;
+    nav{
+        justify-content: start;
     }
-    .hire{
-        /* background-color: green; */
-        top: 70px;
-        width: 500px;
-        height: 100%;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    .p-tags, .p-div{
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .hire .below {
-        margin-top: 0;
-        /* background-color: red; */
-    }
-    .hov p{
-        font-size: 15px;
-    }
-    .chat{
-        display: none;
-    }
-}
-@media (max-width: 900px) {
-    .iwatch{
-        display: block;
-    }
-    .watch{
-        width: 100%;
-    }
-    .left-boxes{
+
+    .right-post{
         display: flex;
-        width: 100%;
-        height: 50%;
-        gap: 5px;
-    }
-    .left-b{
-        width: 50%;
-    }
-    .left-boxes  .img:hover{
-        transform: scale(1)
-    }
-    .left-boxes  .img:hover img{
-        border-radius: 10px ;
-        cursor: pointer;
-    }
-    .left-boxes  .img:hover .img-bt{
-        display: none;
-        /* display: flex; */
-    }
-    .watch  .img:hover{
-        transform: scale(1)
-    }
-    .watch  .img:hover img{
-        border-radius: 10px ;
-        cursor: pointer;
-    }
-    .watch  .img:hover .img-bt{
-        display: none;
-        /* display: flex; */
-    }
-    #second-watch{
-        display: none;
-    }
-    #third-watch{
-        display: block;
-    }
-    .work-done{
-        display: block;
-        width: 100%;
-    }
-    .get{
-        width: 100%;
-        margin: auto;
-    }
-    .a-c{
-        width: 100%;
-        margin: auto;
-    }
-    .get-started{
-        width: 80%;
-    }
-    .third-section{
-        margin-top: 150px;
-    }
-
-}
-@media (max-width: 760px) {
-    .hire{
-        width: 100%;
-        top: 120px;
-    }
-    .below{
-        display: block;
-        height: 180px;
-        width: 95%;
-        bottom: 100px;
         position: absolute;
-        /* align-content: center; */
-        /* background-color: red; */
-        /* margin-top: 180px; */
+        right: 0;
+        /* margin-left: 20px; */
     }
-    .below a{
-        margin-top: 20px;
+    .dash-cont{
+        display: block;
+    }
+    .dash-lft, .dash-rgt{
         width: 100%;
     }
-    .chat{
-        display: block;
-        /* width: 100%; */
-    }
-    .met{
-        padding-bottom: 20px;
-        height: 400px;
-        width: 350px;
-        margin: auto;
-        /* margin-right: 20px; */
-    }
-    .met .under{
-        height: 500px;
-        /* width: 2; */
-    }
-    .hire h1{
-        font-size: 41px;
-    }
-    .hire ul li{
-        font-size: 20px;
-    }
+    
+}
 
-    .top-logos{
-        display: block;
-        justify-content: center;
-    }
-    .top-logos .logos{
-        width: 200px;
-        margin: auto;
-    }
-    .logos-container{
-        display: none;
-    }
-    .hidden{
-        display: block;
-    }
-    section .container-fluid{
-        background-image: none;
-        background-position: right top;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 0;
-        background-color: black;
-    }
-    .make-left{
-        width: 100%;
-    }
-    .iwatch{
-        margin-top: 300px;
-    }
-    #second-top-logo{
-        margin-top: 0;
-        padding-top: 0;
-    }
-    .a-tags{
-        display: none;
-    }
+
+
+@media (max-width: 760px) {
     #foot .a-tags{
         display: block;
     }
@@ -1558,200 +1691,11 @@ footer a:hover{
 
     
 }
-@media (max-width: 680px) {
-    .make-it{
-        padding-top: 0;
-        margin-top: 0;
-        height: auto;
-    }
-    .make-left{
-        margin-top: 0;
-        padding-top: 0;
-
-    }
-    .big{
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .inner{
-        width: 100%;
-        margin-top: 30px;
-    }
-    section{
-        padding-top: 0;
-    }
-    #foot{
-        display: block;
-    }
-
-}
-@media (max-width: 680px) {
-    .chat{
-        height: 40%;
-        width: 70%;
-        /* background-color: red; */
-    }
-    .under img{
-        height: 65%;
-        width: 80%;
-        top: 20%;
-    }
-    .carousel-logos-container{
-        width: 70%;
-    }
-    .carousel-logos-container img{
-        width: 60px;
-        height: 20px;
-        /* gap: 1px; */
-    }
-    .conta .big{
-        width: 100%;
-    }
-    .conta .big .inner{
-        width: 100%;
-    }
-    .left-conta{
-        width: 100%;
-    }
-    .left-conta h1{
-        width: 100%;
-        font-size: 40px;
-    }
-    .third-section #transform {
-        height: 340vh;
-    }
-
-}
-@media (max-width: 405px) {
-    .hire{
-        width: 100%;
-        height: 100%;
-        top: 120px;
-
-    }
-    .hire div h1{
-        font-size: 32px;
-    }
-    .hire .p-tags p{
-        font-size: 19px;
-    }
-    .chat{
-        height: 20%;
-        width: 60%;
-        /* background-color: red; */
-    }
-    .under img{
-        height: 65%;
-        width: 70%;
-        top: 20%;
-    }
-    .below{
-        display: block;
-        margin-top: 70px;
-    }
-    .below a{
-        margin-top: 15px;
-        width: 100%;
-    }
-    .met{
-        height: 50vh;
-    }
-    .conta{
-        background-image: none;
-    }
-
-
-}
-
-@media (max-width: 440px) {
-    #met{
-        width: 300px;
-        background-size: contain;
-        /* display: none; */
-        padding: 0;
-        height: 400px;
-    }
-    #met .under {
-        width: 100%;
-        height: fit-content;
-    }
-    #met .under img{
-        right: 0;
-        width: 200px;
-    }
-    section .iwatch{
-        height: 60vh;
-    }
-}
-
-
-@media (max-width: 390px) {
-    .third-section #transform {
-        height: 350vh;
-    }
-
-    
-}
-@media (max-width: 350px) {
-    .third-section #transform {
-        height: 360vh;
-    }
-
-    
-}
-
-
-
-
-
-
-@media (max-width: 1350px) {
-    nav{
-        padding: 5px 0;
-    }
-    .profile{
-        padding-right: 0;
-        width: 13rem;
-    }
-}
-
-@media (max-width: 1200px) {
-    #browse{
-        width: 56rem;
-        height: 70rem;
-    }
-
-}
-
-@media (max-width: 960px) {
-    .drop{
-        display: none;
-    }
-    #browse{
-        width: 45rem;
-        height: 70rem;
-    }
-    nav{
-        justify-content: start;
-    }
-    .right-post{
-        display: flex;
-        position: absolute;
-        right: 0;
-        /* margin-left: 20px; */
-    }
-
-}
 
 @media (max-width: 750px) {
     .nav-left{
         display: none;
     }
-}
-
-
-@media (max-width: 750px) {
     .nav-left{
         display: none;
     }
@@ -1762,4 +1706,49 @@ footer a:hover{
         position: absolute;
         right: 0;
     }
+    #second-nav{
+        display: none;
+    }
+    .right #notifications{
+        left: -16rem;
+        top: 3rem;
+
+    }
+    .right #notifications2{
+        left: -22rem;
+        top: 3rem;
+
+    }
+    #chat #notifications{
+        left: -22rem;
+        top: 3rem;
+    }
+    #triangle3{
+        top: 2.5rem;
+    }
 }
+
+@media (max-width: 680px) {
+   #foot{
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .cont{
+        width: 100%;
+        height: 60%;
+        /* background-color: green; */
+        margin-top: 70%;
+    }
+}
+
+
+
+
+
+
+
