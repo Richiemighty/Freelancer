@@ -22,6 +22,7 @@
     gap: 10px;
     position: sticky;
     top: 0;
+    box-shadow: 0 0 2px 2px gray;
 }
 
 .p-img{
@@ -61,21 +62,36 @@
     transform: translateY(-75%);
     z-index: 0;
     border-radius: 10px;
-    background-image: url(https://www.f-cdn.com/assets/main/en/assets/unknown.png?image-optimizer=force&format=webply&width=336);
+    background-image: url(images/me.jpeg);
     background-size: cover;
-    border: 2px solid gray;
-    box-shadow: 4px  solid rgb(222, 200, 200);
+    border: 4px solid rgb(252,252,253);
+    box-shadow: 1px 1px 1px 1px  solid rgb(222, 200, 200);
     display: flex;
     align-items: end;
     padding: 10px;
     justify-content: end;
+    position: relative;
 }
 .edit{
-    border: 1px solid black;
+    border: 1px solid lightblue;
     padding: 2px 15px;
     background-color: white;
     border-radius: 3px;
 }
+.edit:hover{
+    background-color: rgba(255, 255, 255, 0.806);cursor: pointer;
+
+}
+.green{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(17, 191, 17);
+    position: absolute;
+    bottom: -0.6rem;
+    right: -0.6rem;
+}
+
 
 
 #blac{
@@ -165,7 +181,6 @@ a#bb{
     background-color: white;
     display: flex ;
     gap: 30px;
-    
     justify-content: end;
     /* position: relative; */
     /* z-index: -1; */
@@ -243,6 +258,8 @@ a span{
 }
 #about .name{
     font-size: 1.3rem;
+    position: relative;
+    cursor: pointer;
 
 }
 
@@ -252,10 +269,7 @@ a span{
     /* background-color: yellow; */
 }
 
-.rgt-ctn{
-    width: 28%;
-    background-color: red;
-}
+
 
 
 #shade .material-symbols-outlined {
@@ -269,15 +283,17 @@ a span{
 }
 
 .pop{
-    max-width: 160px;
+    min-width: 160px;
     height: fit-content;
     margin: auto;
-
     padding: 10px;
     line-height: 1;
     font-size: 0.9rem;
     position: absolute;
-    bottom: -10px;
+    bottom: -4rem;
+    color: white;
+    /* top: ; */
+    /* z-index: 100; */
     /* left: 6%; */
     text-align: center;
     justify-content: center;
@@ -292,6 +308,7 @@ a span{
 
 .name:hover .pop{
     display: block;
+    /* cursor: pointer; */
     /* visibility: visible; */
     /* transition: all 2s linear; */
     display: flex;
@@ -299,7 +316,9 @@ a span{
     border-radius: 5px;
     /* background-color: red; */
 }
-
+#overall{
+    bottom: -2rem;
+}
 #paid{
     color: green;
 }
@@ -380,4 +399,335 @@ select option{
     background-color: rgba(0, 0, 0, 0.149);
 }
 
+
+
+
+.rgt-ctn{
+    width: 28%;
+    height: 60vh;
+    /* background-color: green; */
+    position: relative;
+    padding: 0;
+    transform: translateY(-40px);
+    /* display: flex column; */
+    /* justify-content: end; */
+}
+
+
+.share{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* background-color: gray; */
+}
+.share button{
+    padding: 15px 28px;
+    border: 1px solid lightblue;
+    border-radius: 7px;
+    background-color: rgb(252,252,253);
+    font-weight: 600;
+    color: rgb(58,70,88);
+}
+.share button:hover{
+    background-color: rgba(239, 239, 240, 0.75);
+
+}
+
+.sticky{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 20px;
+    background-color: white;
+    position: sticky;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.5);
+    top: 7rem;
+    padding: 10px;
+    /* border: 1px solid gray; */
+}
+.R {
+    /* border: 1px solid black; */
+    padding: 10px;
+    font-size: 1rem;
+    cursor: default;
+}
+.R span{
+    font-size: 2.5rem;
+}
+
+.R:hover{
+    animation: zoom 1s linear infinite;
+}
+
+
+@keyframes zoom {
+    0%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+
+
+
+#dropping {
+    width: 220px;
+    left: -3rem;
+}
+#triangle5{
+    left: 4rem;
+}
+.ctn{
+    font-size: 0.8rem;
+}
+.ctn a{
+    text-decoration: none;
+    padding-left: 10px;
+    transition: color 0.5s linear;
+}
+.ctn a:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.676);
+}
+
+#dropp{
+    width: 260px;
+    left: -9rem;
+   
+}
+#triangle6{
+    right: 4.5rem;
+}
+
+#sticky-big{
+    height: fit-content;
+    font-size: 0.9rem;
+    top: 4rem;
+    /* transform: translateY(-200px); */
+}
+#sticky-big2{
+    display: none;
+}
+#sticky-big img{
+    width: 23px;
+    margin-right: 10px;
+
+}
+
+main{
+    padding-bottom: 100px;
+}
+
+#triangle7{
+    left: 7rem;
+    top: 3rem;
+}
+
+#sticky-big #dropping{
+    top: 4rem;
+}
+
+
+#email #dropp{
+    width: 260px;
+    left: -12rem;
+    top: 4rem;
+   
+}
+#email #triangle6{
+    right: 2rem;
+
+}
+
+#educ{
+    width: 75%;
+}
+
+
+#edit-hide{
+    width: 100%;
+    /* background-color: red; */
+    justify-content: start;
+}
+#edit-hide .R span{
+    font-size: 1.7rem;
+    /* width: 70%; */
+    /* background-color: green; */
+}
+.btn-w{
+    width: 80%;
+}
+#edit-hide button{
+    width: 100%;
+    /* height: 40px; */
+    border-radius: 5px;
+    padding: 10px;
+}
+.hide{
+    display: none;
+}
+.upload button p{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#hidden-nav{
+    width: 100%;
+    position: fixed;
+    height: 4rem;
+    padding: 5px;
+    display: none ;
+    align-items: center;
+}
+#hidden-nav .nav-right{
+    transform: translate(-10px, -40px);
+}
+
+
+#hidden-upload{
+    display: none;
+}
+
+
+#about-me-btn{
+    outline: none;
+}
+
+@media (max-width: 1350px) {
+    #sticky-big{
+        display: none;
+    }
+    #sticky-big2{
+        display: block;
+    }
+    .browse{
+        width: fit-content;
+        padding: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .rgt-ctn{
+        display: none;
+    }
+    .left-ctn{
+        width: 100%;
+    }
+    #sticky-big2{
+        display: none;
+    }
+    #educ{
+        width: 100%;
+    }
+    .nig{
+        display: none;
+    }
+    .hide{
+        display: block;
+    }
+    .below{
+        padding: 0 20px;
+    }
+    .upload{
+        display: block;
+        height: fit-content;
+        text-align: end;
+        justify-items: end;
+        margin-top: 120px;
+        width: 40%;
+
+    }
+    .upload button{
+        /* padding: 20px; */
+        margin-top: 10px;
+        float: right;
+        padding: 20px;
+        font-size: 1rem;
+    }
+    .upload button p{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .nav-like button{
+        display: none;
+    }
+
+
+}
+
+
+
+@media (max-width: 760px) {
+
+    nav#profile{
+        display: none;
+    }
+    #blac{
+        display: none;
+    }
+    .nav-like{
+        display: none;
+    }
+    #hidden-nav{
+        display: block;
+    }
+    #footer{
+        display: none;
+    }
+    .general{
+        display: none;
+    }
+    .below{
+
+        justify-content: start;
+    }
+    .p-pic{
+        width: 180px;
+        height: 180px;
+    }
+    .upload{
+        display: none;
+    }
+    #hidden-upload{
+        display: block;
+        margin-top: 180px;
+        width: 100%;
+
+        
+    }
+    #about{
+        padding-top: 20px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    #about{
+        padding: 10px;
+    }
+    #about .left-ctn h1{
+        font-size: 1.7rem;
+    }
+    #about .name img{
+        width: 100px;
+    }
+    .contain{
+        padding: 0;
+        font-size: 0.8rem;
+    }
+    .portfolio{
+        padding: 10px;
+        width: 100%;
+    }
+    #port-img{
+        width: 300px;
+    }
+    go{
+        display: none;
+    }
+
+}
 
