@@ -9,7 +9,7 @@ body{
 }
 
 nav{
-    width: 80%;
+    /* width: 80%; */
     height: 3rem;
     width: 100%;
     background-color: black;
@@ -18,6 +18,7 @@ nav{
     padding: 5px 130px;
     margin: 0;
     display: flex;
+    z-index: 100;
     align-items: center;
     justify-content: space-between;
 }
@@ -34,9 +35,12 @@ nav img{
     /* background-color: red; */
     height: 3rem;
     display: flex;
+    /* font-size: 0.7rem; */
     justify-content: center;
     align-items: center;
     color: white;
+    z-index: 100;
+
 }
 
 .browse:hover{
@@ -44,15 +48,19 @@ nav img{
 }
 
 .drop{
-    font-size: 13px;
+    font-size: 0.7rem;
 }
 .right, .left{
     display: flex;
     align-items: center;
+    z-index: 100;
+
 }
 .nav-right{
     display: flex;
     align-items: center;
+    z-index: 100;
+
 
 
 }
@@ -60,14 +68,14 @@ nav img{
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
 }
 #btn span{
     font-size: 9px;
     top: 5px;
 }
 .icons{
-    padding: 10px;
+    padding: 8px;
     font-size: 20px;
     height: 3rem;
     width: 3rem;
@@ -80,10 +88,12 @@ nav img{
 
 #post{
     background-color: rgb(197,61,108);
-    padding: 8px 25px;
+    padding: 7px 20px;
     border-radius: 5px;
     color: white;
     text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 #post:hover{
     background-color: rgb(156, 41, 81);
@@ -96,22 +106,27 @@ nav img{
     width: 16rem;
     font-size: 0.8rem;
     padding-left: 10px;
-    height: 3.14rem;
+    height: 3rem;
     padding-top: 5px;
     /* background-color: red; */
 }
 .profile img{
-    width: 2.5rem;
+    width: 2.2rem;
     border-radius: 5px;
 }
 .name{
     display: flex column;
     align-items: center;
-    padding-left: 9px;
+    padding-left: 7px;
 
 }
 .profile:hover{
     background-color: rgba(255, 255, 255, 0.174);
+}
+.dols{
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin: 0;
 }
 
 
@@ -144,12 +159,12 @@ nav img{
     display: none;
     width: 63rem;
     position: absolute;
-    top: 4rem; /* Adjust this to align the dropdown */
+    top: 3.3rem; /* Adjust this to align the dropdown */
     left: 0rem;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    z-index: 10;
+    z-index: 100;
     padding: 20px;
     /* height: 40rem; */
     color: black;
@@ -160,6 +175,7 @@ nav img{
 /* Show dropdown on hover */
 .browse:hover .dropdown-content {
     display: block;
+    z-index: 100;
 }
 
 
@@ -185,7 +201,9 @@ nav img{
 }
 
 
-
+#browse{
+    z-index: 100;
+}
 
 
 
@@ -310,6 +328,8 @@ nav img{
     border-left: 5px solid transparent;
     box-sizing: border-box;
     color: black;
+    z-index: 100;
+
     text-decoration: none;
 }
 .dropdown-content .btn-type:hover{
@@ -343,8 +363,9 @@ text-decoration: underline;
 
 #triangle3{
     left: 0.5rem;
-    top: 3.5rem;
+    top: 2.7rem;
     z-index: 100;
+
     /* background-color: red; */
 
 }
@@ -367,6 +388,8 @@ text-decoration: underline;
 }
 .notifications{
     display: flex;
+    z-index: 100;
+
 }
 
 
@@ -382,6 +405,8 @@ text-decoration: underline;
     left: -10rem;
     height: 28rem;
     z-index: 10;
+    z-index: 100;
+
 
     /* background-color: transparent; */
     overflow-y: auto;
@@ -405,6 +430,8 @@ text-decoration: underline;
     /* align-items: center; */
     gap: 10px;
     width: 100%;
+    z-index: 100;
+
     /* width: 50rem; */
     /* padding: 10px; */
 }
@@ -416,6 +443,8 @@ text-decoration: underline;
     display: flex;
     flex-direction: column;
     line-height: 1.3;
+    z-index: 100;
+
 }
 
 .post-text {
@@ -435,6 +464,8 @@ text-decoration: underline;
 }
 .dr .dropdown-content{
     display: block;
+    z-index: 100;
+
 }
 .icons:hover .dr{
     display: block;
@@ -542,7 +573,7 @@ text-decoration: underline;
     width: 28rem;
     left: -10rem;
     height: 40rem;
-    z-index: 10;
+    z-index: 100;
 
     /* background-color: transparent; */
 }
@@ -646,7 +677,7 @@ input:checked + .slider::before {
     display: block;
 }
 #notifications3{
-    width: 24rem;
+    width: 21rem;
     left: -5rem;
     height: 40rem;
     /* background-color: transparent; */
@@ -663,7 +694,7 @@ input:checked + .slider::before {
 }
 #triangle4{
     left: 6rem;
-    top: 3.5rem;
+    top: 2.7rem;
     z-index: 100;
     /* background-color: red; */
 
@@ -672,7 +703,7 @@ input:checked + .slider::before {
 
 .profile-atags{
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
     /* background-color: red; */
     padding: 16px 0;
@@ -1117,7 +1148,7 @@ footer{
 #footers{
     width: 20%;
     /* background-color: red; */
-    padding: 50px 10px;
+    padding: 20px 10px;
     /* line-height: 1; */
 }
 
@@ -1197,7 +1228,7 @@ footer{
 
 
 #footers p{
-    line-height: 0.6;
+    line-height: 0.7;
 }
 
 footer a{
@@ -1692,7 +1723,7 @@ footer a:hover{
     
 }
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
     .nav-left{
         display: none;
     }
