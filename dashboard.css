@@ -139,12 +139,15 @@ nav img{
     background-color: rgb(35,42,53);
     /* margin-top: 4rem; */
     justify-content: start;
+    z-index: -1;
 
 
 }
 #second-nav .browse{
     width: fit-content;
     padding: 0 15px;
+    height: 3rem;
+    z-index: 0;
 }
 
 
@@ -734,12 +737,13 @@ input:checked + .slider::before {
 /* Styling for all .browse items */
 .browse {
     /* width: 130px; */
-    padding: 10px 18px;
+    padding: 0 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 4px solid transparent; /* Default transparent border */
     cursor: pointer;
+    height: 4rem;
     transition: border-bottom 0.3s ease; /* Smooth transition */
 }
 
@@ -769,7 +773,7 @@ input:checked + .slider::before {
     border: none;
     background-color: transparent;
     color: white;
-    padding: 10px 0;
+    padding: 0px 10px;
     font-size: 0.8rem;
 }
 

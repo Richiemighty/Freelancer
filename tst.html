@@ -3,51 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Example</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="test.css">
+    <title>Hide/Show on Scroll</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* For demonstration: ensures there is enough space to scroll */
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .stick {
+            position: sticky;
+            top: 0; /* Adjust as needed */
+            background-color: white;
+            z-index: 10;
+            transition: opacity 0.3s ease; /* Smooth transition */
+            opacity: 1; /* Initially visible */
+        }
+        .but {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .hidden {
+            opacity: 0; /* Hides the sticky div */
+            pointer-events: none; /* Prevents interaction */
+        }
+    </style>
 </head>
 <body>
-    <div class="nav-left d-flex">
-        <div class="browse position-relative">
-            Browse
-            <div class="dropdown-content">
-                <div class="dropdown-triangle"></div>
-                <ul>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Freelancers</a></li>
-                    <li><a href="#">Contests</a></li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="browse position-relative">
-            Manage
-            <div class="dropdown-content">
-                <div class="dropdown-triangle"></div>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Reports</a></li>
-                    <li><a href="#">Invoices</a></li>
-                </ul>
-            </div>
-        </div>
+    <div class="content">
+        Scroll down and then up to see the button appear!
+    </div>
 
-        <div class="browse position-relative">
-            Group
-            <div class="dropdown-content">
-                <div class="dropdown-triangle"></div>
-                <ul>
-                    <li><a href="#">Create Group</a></li>
-                    <li><a href="#">Manage Group</a></li>
-                    <li><a href="#">Group Settings</a></li>
-                </ul>
+    <div class="stick hidden" id="stickyDiv"> <!-- Start with hidden class -->
+        <div class="but">
+            <button class="nav-btn left-btn" id="tog-lf"><i class="fa fa-chevron-left"></i></button>
+            <button class="nav-btn right-btn" id="tog-rt"><i class="fa fa-chevron-right"></i></button>
+            <div class="basic position-relative">
+                <div class="d-flex align-items-center">
+                    <img src="images/annual-level-two.svg" alt="" style="width: 24px; height: 24px;"> <!-- Adjust image size as needed -->
+                    <p class="fs-6 fw-light pt-2">Basic</p>
+                </div>
+                <div class="tex">
+                    <p>$4.50 USD</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        let lastScrollTop = 0;
+        const stickyDiv = document.getElementById('stickyDiv');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down, hide the div
+                stickyDiv.classList.add('hidden');
+            } else {
+                // Scrolling up, show the div
+                stickyDiv.classList.remove('hidden');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 </html>
