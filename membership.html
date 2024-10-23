@@ -29,9 +29,9 @@
                     <span class="drop p-2">Browse</span>
 
 
+                    <div class="dropdown-triangle" id="triangle1"></div>
 
                     <div class="dropdown-content" id="browse">
-                        <div class="dropdown-triangle" id="triangle1"></div>
 
                         <div class="search-bar">
                             <i class="fa-solid fa-magnifying-glass"></i>                            
@@ -1977,4 +1977,27 @@
         }
     });
 
+</script>
+
+
+<script>
+    // Select the toggle button and the footer
+    const toggleFooterBtn = document.getElementById('toggleFooterBtn');
+    const footer = document.getElementById('footer');
+
+    // Add a click event listener to the toggle button
+    toggleFooterBtn.addEventListener('click', function() {
+        // Toggle the 'footer-open' class on the footer
+        footer.classList.toggle('footer-open');
+
+        // Optionally, you can change the chevron direction when the footer is opened or closed
+        const icon = toggleFooterBtn.querySelector('i');
+        if (footer.classList.contains('footer-open')) {
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down'); // Change to chevron down when opened
+        } else {
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');   // Change back to chevron up when closed
+        }
+    });
 </script>

@@ -6,6 +6,7 @@
 body{
     position: relative;
     width: 100%;
+    z-index: -1;
 }
 
 nav{
@@ -18,7 +19,7 @@ nav{
     padding: 5px 130px;
     margin: 0;
     display: flex;
-    z-index: 100;
+    z-index: 1;
     align-items: center;
     justify-content: space-between;
 }
@@ -29,6 +30,9 @@ nav img{
 .nav-left{
     display: flex;
     width: fit-content;
+    /* height: 3rem; */
+    padding: 0;
+    margin: 0;
 }
 .browse{
     width: fit-content;
@@ -39,7 +43,10 @@ nav img{
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: 100;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* z-index: 10; */
 
 }
 
@@ -53,13 +60,13 @@ nav img{
 .right, .left{
     display: flex;
     align-items: center;
-    z-index: 100;
+    z-index: 10;
 
 }
 .nav-right{
     display: flex;
     align-items: center;
-    z-index: 100;
+    z-index: 10;
 
 
 
@@ -162,14 +169,14 @@ nav img{
     display: none;
     width: 63rem;
     position: absolute;
-    top: 3.3rem; /* Adjust this to align the dropdown */
+    top: 3.5rem; /* Adjust this to align the dropdown */
     left: 0rem;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    z-index: 100;
+    z-index: 12;
     padding: 20px;
-    /* height: 40rem; */
+    height: 80vh;
     color: black;
 }
 
@@ -194,19 +201,29 @@ nav img{
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #fff;
+    border-bottom: 10px solid white;
     position: absolute;
-    top: -10px;
+    top: -0.5rem;
+    z-index: 100;
     /* left: 16px; */
 }
 #triangle1{
-    left: 3.5rem;
-}
+    top: 3rem;
+    left: 3rem;
+    z-index: 100;
+    display: none;
 
+
+}
+.browse:hover #triangle1{
+    display: block;
+}
 
 #browse{
-    z-index: 100;
+    z-index: 1;
+    overflow-y: auto;
 }
+
 
 
 
@@ -313,6 +330,7 @@ nav img{
 #manage{
     width: 23rem;
     left: -8rem;
+    height: fit-content;
     z-index: 10;
 
 }
@@ -405,6 +423,7 @@ text-decoration: underline;
 
 #notifications{
     width: 24rem;
+    top: 3.3rem;
     left: -10rem;
     height: 28rem;
     z-index: 10;
@@ -574,6 +593,7 @@ text-decoration: underline;
 
 #notifications2{
     width: 28rem;
+    top: 3.3rem;
     left: -10rem;
     height: 40rem;
     z-index: 100;
@@ -682,6 +702,7 @@ input:checked + .slider::before {
 #notifications3{
     width: 21rem;
     left: -5rem;
+    top: 3.3rem;
     height: 40rem;
     /* background-color: transparent; */
     overflow-y: auto;
@@ -1625,7 +1646,7 @@ footer a:hover{
 @media (max-width: 1200px) {
     #browse{
         width: 56rem;
-        height: 70rem;
+        height: 43rem;
     }
 
 }
@@ -1641,8 +1662,8 @@ footer a:hover{
         display: none;
     }
     #browse{
-        width: 45rem;
-        height: 70rem;
+        width: 47rem;
+        height: 85vh;
         left: -7rem;
     }
     #triangle1{
@@ -1666,6 +1687,9 @@ footer a:hover{
     }
     .dash-lft, .dash-rgt{
         width: 100%;
+    }
+    .profile{
+        width: 150px;
     }
     
 }
@@ -1779,6 +1803,10 @@ footer a:hover{
         /* background-color: green; */
         margin-top: 70%;
     }
+    nav.nav-like{
+        display: none;
+        z-index: -1;
+    }
 }
 
 
@@ -1787,3 +1815,8 @@ footer a:hover{
 
 
 
+@media (max-height: 400px) {
+    #footer{
+        height: 82vh;
+    }
+}
