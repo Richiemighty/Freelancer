@@ -549,6 +549,11 @@ text-decoration: underline;
 
 
 
+
+
+
+
+
 /* Initially hide the #settings-btn */
 #settings-btn {
     display: none;
@@ -712,7 +717,7 @@ input:checked + .slider::before {
     height: 100%;
     overflow-y: auto;
     scrollbar-width: thin; 
-    z-index: 10;
+    z-index: -1;
 
 
 }
@@ -802,7 +807,9 @@ input:checked + .slider::before {
 .right-post{
     display: flex;
 }
-
+.notification-text{
+    z-index: 0;
+}
 
 
 
@@ -1596,6 +1603,154 @@ footer a:hover{
 
 
 
+
+
+
+
+.announment{
+    display: flex;
+    padding: 20px;
+    position: relative;
+
+}
+
+
+
+.user-logo img{
+    width: 50px;
+    border-radius: 3px;
+}
+
+.general{
+    padding-left: 5px;
+}
+
+.below-general{
+    display: flex;
+    font-size: 0.8rem;
+    gap: 6px;
+}
+.below-general span{
+    font-size: 1.2rem;
+    
+}
+.span{
+    position: relative;
+}
+
+.popping{
+    width: 150px;
+    height: fit-content;
+    text-align: center;
+    padding: 8px;
+    background-color: #202124;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    left: -50px;
+    display: none;
+}
+
+.span:hover .popping{
+    display: block;
+}
+.below-general a{
+    text-decoration: none;
+    color: #202124;
+}
+.below-general a:hover{
+    text-decoration: underline;
+    color: rgb(69,178,251);
+}
+
+.score{
+    width: 17px;
+}
+
+.dif-a a:hover{
+    color: #202124;
+}
+
+.vert{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: end;
+    position: absolute;
+    right: 10px;
+
+}
+.vert:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.131);
+}
+
+.announment p{
+    font-size: 0.86rem;
+}
+.announment p a{
+    text-decoration: none;
+}
+
+
+.announment video{
+    width: 100%;
+}
+
+
+.thumbs {
+    font-size: 0.8rem;
+    width: 100%;
+    /* background-color: red; */
+    z-index: 10;
+}
+.thumbs span{
+    font-size: 1rem;
+    cursor: pointer;
+}
+#announment p{
+    margin-bottom: 40px;
+}
+
+.img-div{
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+}
+
+.img-div img{
+    width: 40%;
+    max-height: 60vh;
+    z-index: -1;
+}
+
+.img-div img:hover{
+    transform: scale(1.3);
+    z-index: -10;
+
+
+}
+
+.img-div {
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    overflow: hidden; /* Ensures the image doesn't exceed div height */
+}
+
+.img-div img {
+    width: 40%;
+    max-height: 60vh;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.img-div img:hover {
+    transform: scale(1.2); /* Zooms the image by 20% */
+}
 
 
 

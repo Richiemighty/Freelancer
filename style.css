@@ -691,18 +691,20 @@ nav{
     text-align: start;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 3px 10px;
     border-radius: 10px;
     background-color: transparent;
     border: none;
+    font-size: 0.9rem;
     color: white;
+    transition: all 0.5s linear;
 }
 .toggle-content button:hover{
     background-color: rgb(35,42,53);
 }
 .tit i{
     padding-right: 10px;
-    color: blue;
+    color: #2196f3;
 }
 
 
@@ -728,6 +730,29 @@ nav{
 #tog-img .card-body{
     height: 30%;
     /* background-color: red; */
+}
+.tit{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+/* .tit img{
+    width: 35px;
+    height: 35px;
+    background-color: red;
+} */
+
+.headi{
+    width: fit-content;
+    display: flex;
+}
+
+.tit #lil-img{
+    width: 34px;
+    transform: translateY(10px);
+    padding-right: 10px;
+
+    /* height: 24px; */
 }
 
 
@@ -782,7 +807,7 @@ nav{
     font-size: 18px;
     display: flex;
     align-items: center;
-    color: blue;
+    color: #2196f3;
 }
 #right .btnn a{
     color: #2196f3;
@@ -805,7 +830,7 @@ nav{
     /* position: absolute; */
     /* top: 50px; */
     overflow: scroll;
-    background-color: red;
+    /* background-color: red; */
     padding: 0 20px;
 }
 
@@ -834,19 +859,23 @@ nav{
 }
 #right-right .right-right a:hover{
     text-decoration: underline;
-    color: blue;
+    color: #2196f3;
 }
 #right2 .right-left {
-    height: 80vh;
+    height: 65vh;
     display: block;
 }
 #right2 .up-card{
-    height: 70%;
+    height: 60%;
+
     width: 100%;
 }
 #right2 .card{
     width: 48%;
     height: 90%;
+    display: flex;
+    justify-content: start;
+    text-align: start;
 }
 #right2 .up-card .yellow{
     width: 100%;
@@ -858,13 +887,13 @@ nav{
     transition: all 1s linear;
 }
 #right2 a.btn-type:hover i{
-    color: blue;
+    color: #2196f3;
     padding-left: 5px;
 }
 
 #right2 .card-body{
     /* padding-top: 40px; */
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: start;
     /* padding: 0; */
@@ -900,6 +929,64 @@ nav{
 .small-screen .card{
     min-width: 45%;
 }
+
+
+#startt{
+    text-align: start;
+    /* display: flex; */
+    width: 100%;
+    padding: 10px;
+    justify-content: start;
+    justify-self: start;
+    font-size: 0.9rem;
+}
+
+#startt p{
+    padding: 0;
+    margin: 0;
+}
+#startt a{
+    text-decoration: none;
+    color: #2196f3;
+    font-weight: 700;
+}
+#startt a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.card {
+    width: 96%;
+    text-align: center;
+    margin: 10px;
+}
+
+.yellow {
+    width: 100%;
+    overflow: hidden; /* Prevents the image from exceeding the container */
+    text-align: center;
+}
+
+.yellow img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.yellow img:hover {
+    transform: scale(1.2); /* Zooms the image by 20% on hover */
+}
+
+
+
+
+
 
 
 
@@ -1102,6 +1189,87 @@ main{
     display: none;
     /* width: 98%; */
 }
+
+
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: red; */
+    width: 100%;
+    z-index: 0;
+    margin: auto;
+}
+
+.carousel-logos-wrapper {
+    overflow: hidden;
+    width: 60%; /* Adjust width based on design */
+}
+
+.carousel-logos-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3); /* Only display 3 logos at a time */
+}
+
+.carousel-logo {
+    flex: 0 0 33.333%; /* Each logo takes up exactly 1/3 of visible space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+
+}
+
+.carousel-logo img {
+    width: 80%;
+    height: 40px;
+}
+
+.carousel-navigation-buttons {
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.carousel-navigation-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    /* background-color: rgba(255, 255, 255, 0.216); */
+    background-color: black;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+#nextBtn, #prevBtn,
+#prevBtn1, #nextBtn1
+{
+    background-color: black;
+    margin: 0;
+    /* right: 0; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

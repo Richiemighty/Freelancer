@@ -1970,3 +1970,42 @@
     }
 
 </script>
+
+
+
+<script>
+    // Get the buttons
+    const recentBtn = document.getElementById('recentBtn');
+    const savedBtn = document.getElementById('savedBtn');
+
+    // Add event listeners to toggle the 'active' class
+    recentBtn.addEventListener('click', function() {
+        recentBtn.classList.add('active');
+        savedBtn.classList.remove('active');
+    });
+
+    savedBtn.addEventListener('click', function() {
+        savedBtn.classList.add('active');
+        recentBtn.classList.remove('active');
+    });
+
+
+
+    // Get the gear button and settings menu
+    const gearButton = document.getElementById('gear-btn');
+    const settingsMenu = document.getElementById('settings-btn');
+    const chevronLeft = document.getElementById('chevron-left');
+
+    // Show the settings menu when the gear button is clicked
+    gearButton.addEventListener('focus', function() {
+        settingsMenu.style.display = 'block';
+    });
+
+    // Hide the settings menu when the chevron left is clicked
+    chevronLeft.addEventListener('click', function() {
+        settingsMenu.style.display = 'none';
+    });
+
+
+
+</script>
