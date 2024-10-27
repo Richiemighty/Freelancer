@@ -436,6 +436,10 @@ select option{
 
 }
 
+
+
+
+
 .sticky{
     width: 90%;
     margin: auto;
@@ -444,7 +448,7 @@ select option{
     background-color: white;
     position: sticky;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.5);
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.5);
     top: 7rem;
     padding: 10px;
     /* border: 1px solid gray; */
@@ -475,12 +479,29 @@ select option{
 #dropping {
     width: 220px;
     left: -3rem;
+    height: fit-content;
+    /* background-color: red; */
+    top: 3.5rem;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.5);
+
+    /* box-shadow: 0px 0px 1px 1px white; */
+
 }
 #triangle5{
     left: 4rem;
+    top: -0.6rem;
+    /* z-index: 100; */
+
+}
+#triangle9{
+    left: 11rem;
+    top: -0.6rem;
+    /* z-index: 100; */
+
 }
 .ctn{
     font-size: 0.8rem;
+    /* height: fit-content; */
 }
 .ctn a{
     text-decoration: none;
@@ -494,11 +515,14 @@ select option{
 
 #dropp{
     width: 260px;
-    left: -9rem;
+    height: fit-content;
+    left: -10rem;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.5);
+
    
 }
 #triangle6{
-    right: 4.5rem;
+    right: 4rem;
 }
 
 #sticky-big{
@@ -515,6 +539,28 @@ select option{
     margin-right: 10px;
 
 }
+
+#dropping5{
+    width: 260px;
+    height: fit-content;
+    left: -10rem;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.5);
+
+}
+#dropping6{
+    width: 260px;
+    height: fit-content;
+    left: -14rem;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.5);
+
+}
+#triangle8{
+    /* top: -1rem; */
+    left: 14rem;
+}
+
+
+
 
 main{
     padding-bottom: 100px;
@@ -612,6 +658,20 @@ main{
     .browse{
         width: fit-content;
         padding: 0;
+    }
+    #triangle5{
+        left: 3.5rem;
+        top: -0.6rem;
+        /* z-index: 100; */
+    
+    }
+    #triangle9{
+        left: 10rem;
+        top: -0.6rem;
+        /* z-index: 100; */
+    }
+    #triangle6{
+        right: 5rem;
     }
 }
 

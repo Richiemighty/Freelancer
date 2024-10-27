@@ -969,13 +969,14 @@ nav{
 
 .yellow {
     width: 100%;
+
     overflow: hidden; /* Prevents the image from exceeding the container */
     text-align: center;
 }
 
 .yellow img {
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
@@ -1650,6 +1651,9 @@ section .container-fluid .on img{
 
 
 
+
+
+
 .top-logos {
     display: flex;
     width: 100%;
@@ -2156,8 +2160,6 @@ footer{
 
 /* MEDIA QUERY */
 
-
-
 @media (max-width: 1350px) {
     .hire{
         width: 500px;
@@ -2267,11 +2269,14 @@ footer{
 }
 @media (max-width: 960px) {
     .third-section #transform {
-        height: 320vh;
+        /* height: 320vh; */
+        /* padding: 20px; */
+        padding-bottom: 50px;
+        justify-content: center;
     }
     .AI{
         display: block;
-        /* height: 100vh; */
+        height: fit-content;
         margin: auto;
     }
     .AI .div-img{
@@ -2285,13 +2290,19 @@ footer{
     }
     .ai-content{
         margin: auto;
-        margin-top: 10px;
+        height: 45rem;
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 15px;
     }
     #foot{
         display: block;
     }
     .foot-right{
         width: 100%;
+    }
+    .third-section{
+        padding: 0;
     }
 }
 @media (max-width: 935px) {
@@ -2597,9 +2608,6 @@ footer{
         width: 100%;
         font-size: 40px;
     }
-    .third-section #transform {
-        height: 340vh;
-    }
 
 }
 @media (max-width: 405px) {
@@ -2642,7 +2650,6 @@ footer{
 
 
 }
-
 @media (max-width: 440px) {
     #met{
         width: 300px;
@@ -2674,17 +2681,3 @@ footer{
 }
 
 
-@media (max-width: 390px) {
-    .third-section #transform {
-        height: 350vh;
-    }
-
-    
-}
-@media (max-width: 350px) {
-    .third-section #transform {
-        height: 360vh;
-    }
-
-    
-}
