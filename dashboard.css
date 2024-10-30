@@ -169,7 +169,7 @@ nav img{
     display: none;
     width: 63rem;
     position: absolute;
-    top: 3.5rem; /* Adjust this to align the dropdown */
+    top: 4rem; /* Adjust this to align the dropdown */
     left: 0rem;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -208,7 +208,7 @@ nav img{
     /* left: 16px; */
 }
 #triangle1{
-    top: 3rem;
+    top: 3.5rem;
     left: 3rem;
     z-index: 100;
     display: none;
@@ -1260,18 +1260,18 @@ footer{
 
 
 #footers p{
-    line-height: 0.7;
+    line-height: 1;
 }
 
 footer a{
     text-decoration: none;
     color: rgb(252,252,253);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 400;
-    line-height: 0.5;
+    line-height: 0.3;
 }
 footer a:hover{
-    color: rgb(37, 37, 224);
+    color: rgb(39, 112, 209);
     text-decoration: underline;
 }
 
@@ -1439,7 +1439,7 @@ footer a:hover{
 
 
 .phone-footer button:hover span{
-    color: blue;
+    color: rgb(39, 112, 209);
 }
 
 

@@ -36,19 +36,11 @@ aside button{
     background-color: transparent;
     margin-top: 0;
 }
-aside button:hover{
+aside .button-container button:hover{
     border-left: 4px solid gray;
-
 }
 
 /* Button when focused */
-
-aside button.active {
-    color: rgb(24, 114, 235);
-    font-weight: 600;
-    border-left: 4px solid rgb(24, 114, 235);
-    outline: none;
-}
 aside button:focus{
     color: rgb(24, 114, 235);
     font-weight: 600;
@@ -56,7 +48,17 @@ aside button:focus{
     outline: none;
 }
 
+aside button.active {
+    color: rgb(24, 114, 235);
+    font-weight: 600;
+    border-left: 4px solid rgb(24, 114, 235);
+    outline: none;
+}
 
+
+aside .button-container button:hover{
+    border-left: 4px solid gray;
+}
 
 .content {
     width: 60%;
@@ -618,3 +620,11 @@ button.toggle-password:hover{
 
 }
 
+
+
+
+
+
+aside .button-container button:hover{
+    border-left: 4px solid gray;
+}
