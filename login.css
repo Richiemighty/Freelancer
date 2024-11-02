@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+.details{
+    width: 65%;
+    /* background-color: green; */
+
+}
+.pic{
+    width: 35%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* background-color: blue; */
+    /* background-image: url("https://www.f-cdn.com/assets/main/en/assets/job-post/redesign/bird.jpg"); */
+}
+.pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pic .div{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 250px;
+}
+.container-fluid{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 405px;
+    padding: 60px 35px;
+    height: 100%;
+    /* background-color: red; */
+    display: flex column;
+    justify-content: center;
+}
+.logo{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.logo img{
+    width: 50%;
+}
+.content h4{
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn button{
+    padding: 8px 20px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    gap: 15%;
+    background-color: rgb(252,252,253);
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.214);
+    color: rgb(60,64,67);
+    font-size: 15px;
+}
+.btn button:hover{
+    background-color: rgba(173, 216, 230, 0.204);
+}
+
+.btn button img{
+    width: 25px;
+    height: 23px;
+}
+
+
+
+.centered-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0; /* Add margin to create some space above and below */
+}
+
+.centered-text span {
+    flex: 1; /* Make the lines flexible to take up available space */
+    border-bottom: 1px solid #000; /* Line styling */
+    margin: 0 10px; /* Space between the line and the text */
+}
+
+.centered-text p {
+    margin: 0;
+    padding: 0 10px; /* Padding around the text */
+    font-weight: bold; /* You can style the text as needed */
+}
+
+
+
+
+
+
+
+
+
+
+.login-form {
+    margin: auto;
+    /* background-color: green; */
+    display: flex column;
+    justify-content: center;
+    /* text-align: center; */
+
+}
+
+/* Center the form on the page */
+.login-form {
+    width: 100%;
+
+    /* max-width: 400px; Set a maximum width for the form */
+    margin: 0 auto;   /* Centers the form horizontally */
+}
+
+/* Center each input group */
+
+input.form-control{
+    width: 95%;
+    margin: auto;
+    outline: none;
+}
+#password-container {
+    width: 95%;
+}
+
+
+
+
+.log-in{
+    width: 95%;
+}
+
+.sign-up{
+    text-align: center;
+    font-size: 13px;
+}
+
+#rme{
+    font-size: 13px;
+    width: 95%;
+}
+.sign-up a{
+    text-decoration: none;
+}
+button.btn{
+    padding: 12px;
+}
+
+.apps{
+    width: 80%;
+    height: 8%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+}
+.apps div{
+    width: 48%;
+    height: 100%;
+}
+.apps img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+#password-container {
+    position: relative; /* Allows positioning the eye icon inside the input */
+    width: 95%;
+}
+
+
+#password {
+    padding: 10px 30px; /* Reduced right padding for typing space */
+    width: 90%; /* Keep it at full width of the container */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    z-index: 0;
+    border-radius: 5px;
+}
+#password:focus {
+    border-color: #007bff; /* Change the border color on focus */
+    outline: none;
+}
+
+
+#togglePassword {
+    position: absolute;
+    right: 10px; /* Aligns the eye icon to the right inside the input */
+    top: 50%;
+    transform: translateY(-50%); /* Centers the eye icon vertically */
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    z-index: 1; /* Ensures the icon remains clickable above the input field */
+}
+
+.input-group-text {
+    background-color: red;
+    border: none;
+    z-index: 100;
+
+}
+
+.hover-focus-effect:focus {
+    border-color: #007bff; /* Change the border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow effect */
+}
+
+
+
+
+
+
+
+
+
+
+/* SIGN -UP */
+.profile {
+    display: flex;
+    width: 95%;
+    gap: 10px;   
+}
+input.form-control{
+    padding: 13px;
+}
+.two{
+    font-size: 15px;
+}
+.two a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* Remove shadow from all input fields */
+.form-control {
+    box-shadow: none; /* Removes shadow */
+    border: 1px solid #ced4da; /* Default border color */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Change border color to blue on hover */
+.form-control:hover {
+    border-color: blue; /* Border color on hover */
+}
+
+/* Also apply the same to the input-group if necessary */
+.input-group {
+    box-shadow: none; /* Removes shadow */
+}
+
+/* Ensure the eye toggle button does not affect the input hover effect */
+.input-group-text {
+    border: none; /* No border for the eye icon container */
+    background: transparent; /* Make background transparent */
+}
+
+
+
+
+
+
+/* Remove outline and shadow when the input is focused */
+input.form-control:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: none; /* Ensure no shadow on focus */
+    border-color: blue; /* Optional: Change border color when focused */
+}
+
+
+
+/* Shaking animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Change border color to green when input is invalid on blur */
+.invalid-input {
+    border-color: 1px solid green; /* Change border color to green */
+    animation: shake 0.5s; /* Shake animation */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 770px) {
+    .pic{
+        display: none;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .container-fluid{
+        width: 100%;
+        margin: auto;
+    }
+    .content{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+@media (max-width: 600px) {
+    .details{
+        width: 405px;
+    }
+    .content{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .content{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .details{
+        width: 100%;
+        padding-left: 0px;
+        padding-left: 0px;
+    }
+
+}

@@ -1,0 +1,630 @@
+#settings{
+    position: static;
+}
+main {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    /* gap: 100px; */
+    padding: 20px;
+    background-color: rgb(252,252,253);
+}
+aside {
+    width: 30%;
+    height: fit-content;
+    /* display: flex; */
+    /* background-color: red; */
+    padding: 20px ;
+    overflow-x: auto;
+    padding-left: 140px;
+}
+
+
+.content.active {
+    display: block;
+}
+
+
+
+aside button{
+    width: fit-content;
+    border: none;
+    height: 50px;
+    padding: 14px;
+    font-size: 0.9rem;
+    border-left: 4px solid transparent;
+    background-color: transparent;
+    margin-top: 0;
+}
+aside .button-container button:hover{
+    border-left: 4px solid gray;
+}
+
+/* Button when focused */
+aside button:focus{
+    color: rgb(24, 114, 235);
+    font-weight: 600;
+    border-left: 4px solid rgb(24, 114, 235);
+    outline: none;
+}
+
+aside button.active {
+    color: rgb(24, 114, 235);
+    font-weight: 600;
+    border-left: 4px solid rgb(24, 114, 235);
+    outline: none;
+}
+
+
+aside .button-container button:hover{
+    border-left: 4px solid gray;
+}
+
+.content {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px rgb(238,240,244);
+    height: fit-content;
+    background-color: white;
+    /* padding: 20px; */
+    display: none;
+}
+.head{
+    /* padding-left: 20px; */
+    padding: 10px;
+    height: fit-content;
+    border-bottom: 1px solid gray;
+}
+
+.form-sections{
+    display: block;
+    padding: 20px 20px;
+    width: 100%;
+
+    border-bottom: 1px solid rgb(238,240,244);
+
+    /* background-color: rebeccapurple; */
+}
+hr{
+    color:  rgb(158, 162, 169);
+
+}
+
+.name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    /* background-color: gray; */
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.names{
+    width: 100%;
+}
+
+.d-flex .names{
+    width: 50%;
+}
+input {
+    width: 100%;
+    /* height: 40px; */
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid lightblue;
+}
+input:focus{
+    border: 1px solid rgba(14, 14, 223, 0.68);
+    outline: none;
+    box-shadow: none;
+}
+
+.form-sections label{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.small{
+    width: 35%;
+}
+.large{
+    width: 65%;
+}
+
+
+input::placeholder{
+    font-size: 0.9rem;
+}
+
+.form-sections a{
+    text-decoration: none;
+}
+.form-sections a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.timezone-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.timezone-dropdown select {
+    width: 100%;
+    padding-right: 30px; /* Leave space for the chevron icon */
+    appearance: none; /* Hide default dropdown arrow */
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: none; /* Firefox */
+}
+
+
+#timezone {
+    width: 100%;
+    /* padding: 10px; */
+    appearance: none; /* Removes default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+}
+
+
+
+.chevron {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Makes the chevron unclickable */
+    font-size: 16px;
+    color: #333;
+}
+
+
+.browse-language-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+
+
+
+
+
+.multi-select-container {
+    position: relative;
+    width: 100%;
+}
+
+.selected-languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.selected-languages .language-tag {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.selected-languages .language-tag .remove-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.language-search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.language-dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.language-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-dropdown ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.language-dropdown ul li:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+#sub-btn{
+    background-color: rgb(24,114,235);
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#modal-effect{
+    background-color: rgb(252,252,253);
+    color: rgb(61,74,93);
+    border: 1px solid rgb(61,74,93);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+/* Custom Modal Adjustments */
+.custom-modal {
+    width: 75%;   /* Adjust modal width */
+    /* height: 30vh; Adjust modal height */
+    margin: auto; /* Center the modal horizontally */
+}
+
+/* Ensure input fields are evenly spaced */
+.modal-body .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body p {
+    text-align: start;
+}
+
+.modal-footer {
+    justify-content: center; /* Center the buttons */
+}
+
+.modal-footer button {
+    margin: 0 15px; /* Add spacing between buttons */
+}
+
+
+
+#projectEmailFrequency, #latestProjectEmailFrequency{
+    width: 50%;
+}
+
+
+
+p{
+    font-size: 0.9rem;
+}
+
+.btn-manage{
+    border: 1px solid rgb(61,74,93);
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(61,74,93);
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(252,252,253);
+}
+
+.btn-manage:hover{
+    background-color: rgba(128, 128, 128, 0.498);
+    text-decoration: none;
+}
+
+.trial{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(97,189,70);
+    background-color: rgb(244,251,246);
+    border-radius: 4px;
+}
+.trial p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.position-relative {
+    position: relative;
+    width: 50%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+button.toggle-password:hover{
+    background-color: transparent;
+    color: gray;
+}
+
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+
+#password2 input, 
+#membership input,
+#emailNotifications input,
+#password2 input,
+#password2 input,
+#password2 input{
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid lightblue;
+}
+
+#password2 input:focus{
+    border: 1px solid blue;
+} 
+
+.currency-selection{
+    width: 50%;
+}
+.chevron-icon {
+    position: absolute;
+    top: 60%; /* Center vertically */
+    right: 10px; /* Position from the right */
+    /* transform: translateY(-50%); Adjust vertical position */
+    pointer-events: none; /* Prevent interaction */
+    color: #007bff; /* Icon color */
+}
+
+.login-info{
+    display: flex;
+    padding: 15px;
+    color: rgb(188,197,211);
+    font-size: 0.8rem;
+
+
+}
+.login-info:hover{
+    background-color: rgba(128, 128, 128, 0.284);
+}
+.login-info i{
+    font-size: 3rem;
+    padding: 10px 20px;
+    
+}
+
+.bigger{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(70,168,215);
+}
+.circle{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    background-color: rgb(70,168,215);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: none;
+    position: relative;
+}
+
+.rec{
+    width: 25%;
+    height: 6px;
+    background-color: rgb(188,197,211);
+}
+.bg{
+    background-color: rgb(188,197,211);
+}
+.low{
+    position: absolute;
+    bottom: -2rem;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.points{
+    padding: 7px 15px;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 600;
+    border: 1px solid gray;
+}
+
+.fb img{
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.fb{
+    padding: 6px 15px;
+    border-radius: 4px;
+    border: none;
+    background-color:  rgb(25,119,242);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+.form-check-input{
+    width: fit-content;
+}
+
+#account input{
+    width: fit-content;
+}
+
+
+.deactivate{
+    border: 1px solid lightblue;
+    padding: 20px;
+}
+
+
+
+#password{
+    width: 100%;
+}
+#hidden-nav{
+    display: none;
+}
+
+
+
+@media (max-width: 1350px) {
+    aside{
+        padding-left: 0;
+        padding: 10px;
+        width: 300px;
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 760px) {    
+    main{
+        display: block;
+    }
+    aside{
+        display: flex;
+        width: 100%;
+        margin-top: 4rem;
+    }
+    aside button{
+        min-width: 150px;
+        padding: 4px 6px;
+        /* background-color: red; */
+        font-size: 0.8rem;
+        border: none;
+        border-bottom: 4px solid transparent;
+    }
+    aside button:focus{
+        border: none;
+        border-bottom: 4px solid rgb(47,124,236);
+        
+    }
+    aside::-webkit-scrollbar{
+        display: none;
+    } 
+    main{
+        padding: 5px 2px;
+    }
+    #hidden-nav{
+        display: block;
+    }
+    #settings{
+        display: none;
+    }
+    #hidden-nav{
+        width: 100%;
+        position: fixed;
+        height: 4rem;
+        padding: 5px;
+        display: block ;
+        align-items: center;
+    }
+    #hidden-nav .nav-right{
+        transform: translate(-15px, -30px);
+    }
+    .flex{
+        display: block;
+    }
+    .input{
+        width: 100%;
+
+    }
+    .names{
+        width: 100%;
+    }
+    .small, .large{
+        width: 100%;
+    }
+    .position-relative {
+        width: 100%;
+    }
+    #trust .d-flex{
+        justify-content: space-between;
+    }
+    
+
+}
+
+
+
+
+
+
+aside .button-container button:hover{
+    border-left: 4px solid gray;
+}
